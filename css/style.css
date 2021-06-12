@@ -443,12 +443,30 @@ li {
 	display: flex;
 	justify-content: space-between;
 }
+.subtitle-rank-button-wrap{
+	position: relative;
+	margin-top:4rem;
+}
+.ingredients-section-heading{
+	position:absolute;
+	left:8rem;
+	font-weight: bold;
+}
+.button-section{
+	position:absolute;
+	right:1rem;
+	cursor:pointer;
+	padding-left:5rem;
+	width:18rem;
+}
+
 .ingredients-section {
 	flex-basis: 65%;
+	margin-top:2rem;
 }
 
 .ingredients-section-cards {
-	margin-top: 2.5rem;
+	margin-top: 4.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -463,11 +481,20 @@ li {
 	width: 100%;
 }
 
+.button-section{
+	border: none;
+	outline: none;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	padding: 1rem 2rem;
+	border-radius: var(--primary-border-radius);
+}
+
 .rank-cards {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top:2rem;
+	margin-top:5rem;
 }
 .rank-card {
 	padding:2rem;
@@ -475,7 +502,7 @@ li {
 	border-radius: 5px;
 	width:19rem;
 	height:18.4rem;
-	margin-top:2.5rem;
+	margin-top:2rem;
 	color: var(--primary-color);
 	opacity: 0.6;
 	position:relative;
@@ -486,6 +513,7 @@ li {
 	top:50%;
 	transform:translate(-50%,-50%);
 }
+
 /* .shop__card-button {
 	background-color: var(--primary-color);
 	color: var(--white-color);
