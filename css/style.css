@@ -470,14 +470,22 @@ li {
 	margin-top:2rem;
 }
 .rank-card {
-	padding: 2rem;
+	padding:2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
 	width:19rem;
 	height:18.4rem;
 	margin-top:2.5rem;
+	color: var(--primary-color);
+	opacity: 0.6;
+	position:relative;
 }
-
+.rank-card-text{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
 /* .shop__card-button {
 	background-color: var(--primary-color);
 	color: var(--white-color);
