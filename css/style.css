@@ -456,9 +456,8 @@ li {
 }
 .button-section {
 	position: absolute;
-	right: 1rem;
+	right: 12.5rem;
 	cursor: pointer;
-	padding-left: 5rem;
 	width: 18rem;
 }
 
@@ -475,11 +474,12 @@ li {
 }
 
 .ingredients-section-card {
-	flex-basis: 21%;
+	flex-basis: 22.9%;
 	margin: 1rem;
 }
 .ingredients-section-card__image {
 	width: 100%;
+
 }
 
 .button-section {
@@ -501,15 +501,15 @@ li {
 	width: 100%;
 }
 .rank-card {
-	padding: 2rem;
-	border: 1px dashed var(--primary-color);
-	border-radius: 5px;
-	width: 100%;
-	height: 25%;
-	margin-top: 1.8rem;
-	color: var(--primary-color);
-	opacity: 0.6;
-	position: relative;
+	padding: 2rem 2rem;
+    border: 1px dashed var(--primary-color);
+    border-radius: 5px;
+    width: 70%;
+    height: 26%;
+    margin-top: 3.3rem;
+    color: var(--primary-color);
+    opacity: 0.6;
+    position: relative;
 }
 .rank-card-text {
 	position: absolute;
@@ -517,50 +517,7 @@ li {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-progress[value]::-webkit-progress-value {
-	position: relative;
 
-	background-size: 35px 20px, 100% 100%, 100% 100%;
-	border-radius: 3px;
-
-	/* Let's animate this */
-}
-/* .progress-bar {
-	border: none;
-	border-radius: 50%;
-	width: 40rem;
-	background: crimson;
-}
-
-.progress-bar {
-	color: lightblue;
-}
-
-.progress-bar::-webkit-progress-value {
-	background: lightblue;
-}
-
-.progress-bar::-moz-progress-bar {
-	background: lightcolor;
-}
-
-.progress-bar::-webkit-progress-value {
-	background: var(--primary-color);
-}
-
-.progress-bar::-webkit-progress-bar {
-	background: #f1f1f1;
-} */
-/* .shop__card-button {
-	background-color: var(--primary-color);
-	color: var(--white-color);
-	font-size: 1rem;
-	outline: none;
-	border: none;
-	padding: 1.8rem 5rem;
-	margin-top: 3rem;
-	border-radius: var(--primary-border-radius);
-} */
 
 .why-plant-milk {
 	margin-top: 3rem;
