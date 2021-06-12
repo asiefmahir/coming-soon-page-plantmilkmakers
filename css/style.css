@@ -218,8 +218,8 @@ li {
 
 .subscribe-form {
 	margin-top: 2rem;
-	display:flex;
-	width:60rem;
+	display: flex;
+	width: 100%;
 }
 
 .email-input {
@@ -229,9 +229,9 @@ li {
 	border-radius: 0.5rem 0 0 0.5rem;
 	outline: none;
 	border: 1px solid var(--primary-color);
-	width:100%;
-	background:transparent;
-	height:6rem;
+	width: 100%;
+	background: transparent;
+	height: 6rem;
 }
 .submit-button {
 	margin-right: 0.26rem;
@@ -243,19 +243,15 @@ li {
 	outline: none;
 	font-size: 1.3rem;
 	font-weight: 600;
-
 }
 
 .form-and-social-links {
 	margin-top: 12rem;
 }
 
-
 .form-and-social-links {
 	margin-top: 12rem;
 }
-
-
 
 .form-title {
 	color: #112433;
@@ -448,26 +444,27 @@ li {
 	display: flex;
 	justify-content: space-between;
 }
-.subtitle-rank-button-wrap{
+.subtitle-rank-button-wrap {
 	position: relative;
-	margin-top:4rem;
+	margin-top: 4rem;
 }
-.ingredients-section-heading{
-	position:absolute;
-	left:8rem;
-	font-weight: bold;
+.ingredients-section-heading {
+	position: absolute;
+	left: 8rem;
+	font-weight: 600;
+	font-size: 1.2srem;
 }
-.button-section{
-	position:absolute;
-	right:1rem;
-	cursor:pointer;
-	padding-left:5rem;
-	width:18rem;
+.button-section {
+	position: absolute;
+	right: 1rem;
+	cursor: pointer;
+	padding-left: 5rem;
+	width: 18rem;
 }
 
 .ingredients-section {
 	flex-basis: 65%;
-	margin-top:2rem;
+	margin-top: 2rem;
 }
 
 .ingredients-section-cards {
@@ -475,50 +472,85 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
 }
 
 .ingredients-section-card {
 	flex-basis: 21%;
-	margin:1rem;
+	margin: 1rem;
 }
 .ingredients-section-card__image {
 	width: 100%;
 }
 
-.button-section{
+.button-section {
 	border: none;
 	outline: none;
 	background-color: var(--primary-color);
 	color: var(--white-color);
 	padding: 1rem 2rem;
 	border-radius: var(--primary-border-radius);
+	font-size: 1.6rem;
+}
+.rank-section {
+	flex-basis: 20%;
 }
 
 .rank-cards {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top:5rem;
+	margin-top: 8rem;
+	height: 100%;
+	width: 100%;
 }
 .rank-card {
-	padding:2rem;
+	padding: 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
-	width:19rem;
-	height:18.4rem;
-	margin-top:2rem;
+	width: 100%;
+	height: 25%;
+	margin-top: 1.8rem;
 	color: var(--primary-color);
 	opacity: 0.6;
-	position:relative;
+	position: relative;
 }
-.rank-card-text{
-	position:absolute;
-	left:50%;
-	top:50%;
-	transform:translate(-50%,-50%);
+.rank-card-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+progress[value]::-webkit-progress-value {
+	position: relative;
+
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius: 3px;
+
+	/* Let's animate this */
+}
+/* .progress-bar {
+	border: none;
+	border-radius: 50%;
+	width: 40rem;
+	background: crimson;
 }
 
+.progress-bar {
+	color: lightblue;
+}
+
+.progress-bar::-webkit-progress-value {
+	background: lightblue;
+}
+
+.progress-bar::-moz-progress-bar {
+	background: lightcolor;
+}
+
+.progress-bar::-webkit-progress-value {
+	background: var(--primary-color);
+}
+
+.progress-bar::-webkit-progress-bar {
+	background: #f1f1f1;
+} */
 /* .shop__card-button {
 	background-color: var(--primary-color);
 	color: var(--white-color);
@@ -775,8 +807,8 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
-	width:70%;
-	margin:auto;
+	width: 70%;
+	margin: auto;
 }
 
 .footer__social-link-item {
