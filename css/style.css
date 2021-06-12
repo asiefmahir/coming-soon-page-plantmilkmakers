@@ -192,11 +192,11 @@ li {
 }
 
 .hero__image-wrapper {
-	width: 65%;
+	width: 60%;
 }
 
 .hero__image {
-	width: 80rem;
+	width: 100%;
 }
 
 .hero__title {
@@ -216,34 +216,41 @@ li {
 	/* text-align: justify; */
 }
 
-.form-and-social-links {
-	margin-top: 12rem;
-}
-
 .subscribe-form {
-	margin-top: 1rem;
+	margin-top: 2rem;
+	display:flex;
+	width:60rem;
 }
 
 .email-input {
 	font-size: 1.5rem;
 	color: #bababa;
 	padding: 1rem 2rem;
-	border-radius: 5px;
-	border: none;
+	border-radius: 0.5rem 0 0 0.5rem;
 	outline: none;
 	border: 1px solid var(--primary-color);
+	width:100%;
+	background:transparent;
+	height:6rem;
 }
 .submit-button {
 	margin-right: 0.26rem;
-	padding: 1.2rem 0.8rem;
+	padding: 1.2rem 4rem;
 	color: #ffffff;
 	background-color: var(--primary-color);
-	border-radius: 5px;
+	border-radius: 0 0.5rem 0.5rem 0;
 	border: none;
 	outline: none;
 	font-size: 1.3rem;
 	font-weight: 600;
+
 }
+
+.form-and-social-links {
+	margin-top: 12rem;
+}
+
+
 
 .form-title {
 	color: #112433;
@@ -445,12 +452,12 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	/* align-items: space-between; */
-	/* flex-basis: %; */
+	
 }
 
 .ingredients-section-card {
-	flex-basis: 22%;
+	flex-basis: 21%;
+	margin:1rem;
 }
 .ingredients-section-card__image {
 	width: 100%;
@@ -460,11 +467,15 @@ li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top:2rem;
 }
 .rank-card {
-	padding: 5rem 5rem;
+	padding: 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
+	width:19rem;
+	height:18.4rem;
+	margin-top:2.5rem;
 }
 
 /* .shop__card-button {
@@ -723,6 +734,8 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
+	width:70%;
+	margin:auto;
 }
 
 .footer__social-link-item {
@@ -791,7 +804,7 @@ li {
 /*utility*/
 
 .container {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 
