@@ -163,8 +163,11 @@
 							Drag Ingredient to the preferred rank
 						</h3>
 						<ul class="ingredients-section-cards">
-							<li class="ingredients-section-card" draggable="true">
+							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-1"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -172,6 +175,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-2"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -179,6 +185,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-3"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -186,6 +195,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-4"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -193,6 +205,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-5"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -200,6 +215,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-6"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -207,6 +225,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-7"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -214,6 +235,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-8"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -221,6 +245,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-9"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -228,6 +255,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-10"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -235,6 +265,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-11"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -242,6 +275,9 @@
 							</li>
 							<li class="ingredients-section-card">
 								<img
+									draggable="true"
+									id="draggable-12"
+									ondragstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -252,9 +288,27 @@
 					<div class="rank-section">
 						<div class="button-section">See Results</div>
 						<div class="rank-cards">
-							<div class="rank-card">Rank 1</div>
-							<div class="rank-card">Rank 2</div>
-							<div class="rank-card">Rank 3</div>
+							<div
+								class="rank-card"
+								ondrop="onDrop(event)"
+								ondragover="onDragOver(event)"
+							>
+								Rank 1
+							</div>
+							<div
+								class="rank-card"
+								ondrop="onDrop(event)"
+								ondragover="onDragOver(event)"
+							>
+								Rank 2
+							</div>
+							<div
+								class="rank-card"
+								ondrop="onDrop(event)"
+								ondragover="onDragOver(event)"
+							>
+								Rank 3
+							</div>
 						</div>
 					</div>
 				</div>
