@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Thickeners" transform="translate(-795 -5327)">
+    <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(795 5327)" fill="#fff" stroke="#80c627" stroke-width="3" stroke-dasharray="9">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="38.5" fill="none"/>
+    </g>
+    <line id="Line_5" data-name="Line 5" y1="63" x2="44" transform="translate(812 5335)" fill="none" stroke="#80c627" stroke-width="3"/>
+    <path id="half-full-flask" d="M47.084,30.311,37.247,14.421V2.352h.866a1.115,1.115,0,0,0,1.115-1.115V1.115A1.115,1.115,0,0,0,38.113,0H27.583a1.115,1.115,0,0,0-1.115,1.115v.122a1.115,1.115,0,0,0,1.115,1.115h.866V14.421L18.612,30.311a3.425,3.425,0,0,0-.084,3.513A3.835,3.835,0,0,0,21.9,35.75H43.8a3.836,3.836,0,0,0,3.371-1.927A3.425,3.425,0,0,0,47.084,30.311Zm-16.915-15.4V3.213h5.357v11.7l3.5,5.649H26.672Z" transform="translate(802.152 5349.625)" fill="#80c627"/>
+  </g>
+</svg>

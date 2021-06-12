@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Synthetic_Vitamins" transform="translate(-1195 -5327)">
+    <g id="Ellipse_47" data-name="Ellipse 47" transform="translate(1195 5327)" fill="#fff" stroke="#80c627" stroke-width="3" stroke-dasharray="9">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="38.5" fill="none"/>
+    </g>
+    <line id="Line_6" data-name="Line 6" y1="63" x2="47" transform="translate(1211 5336)" fill="none" stroke="#80c627" stroke-width="3"/>
+    <path id="capsules-solid" d="M42.419,52.48,32.4,38.172a8.728,8.728,0,0,0-15.339,1.963A8.537,8.537,0,0,0,0,40.556V57.667a8.556,8.556,0,0,0,17.111,0V46.277a8.852,8.852,0,0,0,.978,1.91L28.111,62.495A8.732,8.732,0,1,0,42.419,52.48Zm-30.2-3.369H4.889V40.556a3.667,3.667,0,1,1,7.333,0ZM27.1,52.541l-5.011-7.158a3.845,3.845,0,1,1,6.3-4.408L33.4,48.133Z" transform="translate(1214 5317)" fill="#80c627"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.48" height="45.509" viewBox="0 0 50.48 45.509">
+  <g id="view_all_arrow" transform="translate(-1494.274 -6705)">
+    <g id="Rectangle_674" data-name="Rectangle 674" transform="translate(1500.781 6705) rotate(2)" fill="rgba(128,198,39,0.1)" stroke="#80c627" stroke-width="2" stroke-dasharray="7">
+      <rect width="44" height="44" rx="22" stroke="none"/>
+      <rect x="1" y="1" width="42" height="42" rx="21" fill="none"/>
+    </g>
+    <g id="Group_101" data-name="Group 101" transform="translate(-15.476 608.401)">
+      <line id="Line_9" data-name="Line 9" x2="29.528" transform="translate(1510.5 6119.5)" fill="none" stroke="#80c627" stroke-linecap="round" stroke-width="1.5"/>
+      <g id="Group_98" data-name="Group 98" transform="translate(1536.077 6114.599)">
+        <line id="Line_10" data-name="Line 10" x2="4.901" y2="4.901" fill="none" stroke="#80c627" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="Line_11" data-name="Line 11" y1="4.901" x2="4.901" transform="translate(0 4.901)" fill="none" stroke="#80c627" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,498 @@
+@media (max-width: 1440px) {
+	.hero__image {
+		width: 75rem;
+	}
+}
+
+@media (max-width: 1365px) {
+	.hero__image {
+		width: 70rem;
+	}
+}
+
+@media (max-width: 1308px) {
+	.hero__image {
+		width: 65rem;
+	}
+	.menu {
+		margin-left: 5rem;
+	}
+	.why-plant-milk__our-speciality-item {
+		padding: 1rem 3rem;
+	}
+}
+@media (max-width: 1275px) {
+	.menu {
+		margin-left: 3rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 5rem;
+	}
+}
+@media (max-width: 1212px) {
+	.hero__image {
+		width: 62rem;
+	}
+}
+
+@media (max-width: 1204px) {
+	.signin-cart-wrapper {
+		margin-left: 4rem;
+	}
+	.logo__image {
+		width: 15rem;
+	}
+}
+
+@media (max-width: 1168px) {
+	.hero__image {
+		width: 60rem;
+	}
+}
+
+@media (max-width: 1148px) {
+	.signin-cart-wrapper {
+		margin-left: 4rem;
+	}
+	.logo__image {
+		width: 12rem;
+	}
+}
+
+@media (max-width: 1135px) {
+	.hero__image {
+		width: 55rem;
+	}
+	.why-plant-milk__our-speciality-item {
+		padding: 1.5rem;
+	}
+	.why-plant-milk__our-speciality-image {
+		width: 3rem;
+	}
+}
+
+@media (max-width: 1062px) {
+	.hero__image {
+		width: 52rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero__image {
+		width: 50rem;
+	}
+	.hero__title {
+		font-size: 3.5rem;
+	}
+	.hero__excerpt {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 983px) {
+	.hero__image {
+		width: 48rem;
+	}
+}
+
+@media (max-width: 950px) {
+	.hero__image {
+		width: 45rem;
+	}
+}
+@media (max-width: 908px) {
+	.hero__image {
+		width: 42rem;
+	}
+}
+@media (max-width: 862px) {
+	.hero__image {
+		width: 40rem;
+	}
+}
+
+@media (max-width: 830px) {
+	.hero__image {
+		width: 35rem;
+	}
+	.hero__title {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	.hero__excerpt {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-flex-wrapper {
+		flex-direction: column-reverse;
+	}
+	.hero__description {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1104px) {
+	.menu {
+		margin-left: 2rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 3rem;
+	}
+	.logo__image {
+		width: 11rem;
+	}
+}
+
+@media (max-width: 1061px) {
+	.menu {
+		margin-left: 1rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 2rem;
+	}
+	.logo__image {
+		width: 11rem;
+	}
+
+	.how-it-works__card:nth-child(odd) {
+		padding: 6rem 1.5rem;
+	}
+
+	.how-it-works__card-image {
+		width: 5rem;
+	}
+
+	.how-it-works__bordered {
+		width: 12rem;
+		height: 12rem;
+		top: -12rem;
+	}
+
+	.how-it-works__dasshed {
+		top: -13rem;
+		width: 14rem;
+		height: 14rem;
+	}
+}
+
+@media (max-width: 1032px) {
+	.menu__item {
+		margin-left: 1rem;
+	}
+
+	.how-it-works__video-wrapper::before {
+		height: 36%;
+	}
+
+	.how-it-works__video-wrapper::after {
+		height: 33%;
+	}
+}
+@media (max-width: 991px) {
+	.menu__item {
+		margin-left: 0.8rem;
+	}
+}
+
+@media (max-width: 972px) {
+	.menu__item {
+		margin-left: 0.5rem;
+	}
+}
+
+@media (max-width: 947px) {
+	.menu__item {
+		margin-left: 0.3rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 2rem;
+	}
+	.logo__image {
+		width: 10rem;
+	}
+
+	.how-it-works__card:nth-child(1) {
+		padding: 7.2rem 1.5rem;
+	}
+}
+
+@media (max-width: 930px) {
+	.menu__item {
+		margin-left: 0.3rem;
+	}
+	.menu__link {
+		font-size: 1.2rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 1rem;
+	}
+	.logo__image {
+		width: 8rem;
+	}
+}
+
+@media (max-width: 895px) {
+	.how-it-works__card:nth-child(2) {
+		padding: 6.2rem 1.5rem;
+	}
+
+	.how-it-works__card-image {
+		width: 4rem;
+	}
+
+	.how-it-works__bordered {
+		width: 10rem;
+		height: 10rem;
+		top: -10rem;
+	}
+
+	.how-it-works__dasshed {
+		top: -11rem;
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.how-it-works__video-wrapper::before {
+		height: 33%;
+	}
+
+	.how-it-works__video-wrapper::after {
+		height: 30%;
+	}
+
+	.why-plant-milk__image {
+		width: 100%;
+	}
+
+	.why-plant-milk__our-speciality-image {
+		width: 2.3rem;
+	}
+
+	.why-plant-milk__our-speciality-text {
+		font-size: 0.8rem;
+		font-weight: 400;
+		margin-left: 1rem;
+	}
+}
+
+@media (max-width: 847px) {
+	.signin-cart-wrapper__cart-image {
+		width: 2rem;
+	}
+	.menu__link {
+		font-size: 1.1rem;
+	}
+
+	.why-plant-milk__our-speciality-item {
+		padding: 1rem 2rem;
+		width: 32%;
+	}
+
+	.why-plant-milk__our-speciality-image {
+		width: 2.5rem;
+	}
+}
+
+/*tablet devices*/
+
+@media (max-width: 768px) {
+	.signin-cart-wrapper__cart-image {
+		width: 1.8rem;
+	}
+	.menu__link {
+		font-size: 1rem;
+	}
+
+	.how-it-works__cards {
+		flex-direction: column;
+	}
+
+	.how-it-works__card {
+		width: 90%;
+		margin-bottom: 7rem;
+	}
+
+	.how-it-works__video-wrapper::before {
+		height: 30%;
+	}
+
+	.how-it-works__video-wrapper::after {
+		height: 26%;
+	}
+
+	.why-plant-milk__our-speciality-items {
+		flex-direction: column;
+	}
+	.why-plant-milk__our-speciality-item {
+		width: 90%;
+	}
+	.why-plant-milk__our-speciality-text {
+		font-weight: 700;
+		margin-left: 2.5rem;
+	}
+}
+
+/* Shop Section */
+
+@media (max-width: 1024px) {
+	.shop__card-title {
+		font-size: 2rem;
+	}
+	.shop__card-desc {
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: 856px) {
+	.shop__title {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.shop-flex-wrapper-1 {
+		flex-direction: column;
+	}
+	.shop-flex-wrapper-2 {
+		flex-direction: column-reverse;
+	}
+	.shop__card-details {
+		text-align: center;
+	}
+	.shop__card-image {
+		width: 50%;
+	}
+	.shop__card-title {
+		font-size: 3rem;
+	}
+	.shop__card-desc {
+		font-weight: 500;
+	}
+}
+
+/* Recipies Section */
+
+@media (max-width: 993px) {
+	.popular-recipies__card-text {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 893px) {
+	.popular-recipies__card-text {
+		font-size: 1.2rem;
+		line-height: 2.2rem;
+	}
+}
+
+@media (max-width: 793px) {
+	.popular-recipies__card-text {
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.popular-recipies__title {
+		font-size: 3rem;
+	}
+	.popular-recipies__cards {
+		display: flex;
+		flex-direction: column;
+	}
+	.popular-recipies__card {
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.popular-recipies__card-text {
+		font-size: 2rem;
+	}
+}
+
+/*footer Section*/
+@media (max-width: 1184px) {
+	.footer__logo-decs {
+		margin-left: 0rem;
+		width: 50%;
+	}
+
+	.footer__important-links {
+		width: 30%;
+	}
+
+	.footer__social-links-title {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-width: 970px) {
+	.footer__important-links {
+		width: 38%;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer__elements {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__logo-decs {
+		width: 100%;
+	}
+
+	.footer__important-links {
+		width: 100%;
+		margin-top: 3rem;
+	}
+
+	.footer__social-links {
+		width: 100%;
+	}
+}
+/* Recent News Section */
+
+@media (max-width: 990px) {
+	.recent-news__card-title {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 890px) {
+	.recent-news__card-title {
+		font-size: 1.4rem;
+	}
+	.recent-news__card-excerpt {
+		line-height: 1.4rem;
+	}
+}
+
+@media (max-width: 782px) {
+	.recent-news__card-body {
+		padding: 1.2rem;
+	}
+}
+@media (max-width: 768px) {
+	.recent-news__card-body {
+		padding: 1.2rem;
+	}
+	.recent-news__cards {
+		display: flex;
+		flex-direction: column;
+	}
+	.recent-news__card {
+		width: 100%;
+		margin-top: 3rem;
+	}
+	.recent-news__title {
+		font-size: 3.5rem;
+		margin-left: 0;
+	}
+	.recent-news__view-all {
+		margin-right: 0;
+	}
+}
