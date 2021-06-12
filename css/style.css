@@ -219,7 +219,7 @@ li {
 .subscribe-form {
 	margin-top: 2rem;
 	display: flex;
-	width: 60rem;
+	width: 100%;
 }
 
 .email-input {
@@ -451,7 +451,8 @@ li {
 .ingredients-section-heading {
 	position: absolute;
 	left: 8rem;
-	font-weight: bold;
+	font-weight: 600;
+	font-size: 1.2srem;
 }
 .button-section {
 	position: absolute;
@@ -488,21 +489,24 @@ li {
 	color: var(--white-color);
 	padding: 1rem 2rem;
 	border-radius: var(--primary-border-radius);
+	font-size: 1.6rem;
+}
+.rank-section {
+	flex-basis: 20%;
 }
 
 .rank-cards {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top: 5rem;
+	margin-top: 8rem;
+	height: 100%;
+	width: 100%;
 }
 .rank-card {
 	padding: 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
-	width: 19rem;
-	height: 18.4rem;
-	margin-top: 2rem;
+	width: 100%;
+	height: 25%;
+	margin-top: 1.8rem;
 	color: var(--primary-color);
 	opacity: 0.6;
 	position: relative;
