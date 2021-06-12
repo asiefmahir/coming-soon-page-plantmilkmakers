@@ -517,13 +517,24 @@ li {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-progress[value]::-webkit-progress-value {
-	position: relative;
 
-	background-size: 35px 20px, 100% 100%, 100% 100%;
-	border-radius: 3px;
+.result-and-form-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
 
-	/* Let's animate this */
+.form-and-image-wrapper {
+	flex-basis: 60%;
+}
+
+.result-section {
+	flex-basis: 40%;
+}
+.image {
+	width: 100%;
+}
+
+.parent {
 }
 /* .progress-bar {
 	border: none;

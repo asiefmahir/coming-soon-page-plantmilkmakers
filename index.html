@@ -162,7 +162,7 @@
 					<h3 class="ingredients-section-heading">
 						Drag Ingredient to the preferred rank
 					</h3>
-					<div class="button-section flex-space-around">
+					<div id="quiz-button" class="button-section flex-space-around">
 						<img src="./assets/icons/bar.svg" alt="bar" />
 						See Results
 					</div>
@@ -400,20 +400,62 @@
 					</div>
 					<div class="result-section">
 						<button>Back to Quiz</button>
-						<div class="progress-report">
-							<div class="label-and-score-wrapper">
-								<label for="first-option">Almond</label>
-								<span class="score">50</span>
-							</div>
+						<!-- <div class="progress-report">
 							<div class="first-option">
+								<div class="label-and-score-wrapper">
+									<label for="first-option">Almond</label>
+									<span class="score">50</span>
+								</div>
+								<div class="parent">
+									<div class="child"></div>
+								</div>
+							</div>
+						</div> -->
+						<div class="progress-report" id="progress-report">
+							<div class="option">
+								<label class="label" for="file"></label>
 								<progress
-									id="first-option"
-									value="50"
+									id="file"
+									class="progress"
+									value="32"
 									max="100"
-									class="progress-bar"
-								>
-									50
-								</progress>
+								></progress>
+							</div>
+							<div class="option">
+								<label class="label" for="file"></label>
+								<progress
+									id="file"
+									class="progress"
+									value="32"
+									max="100"
+								></progress>
+							</div>
+							<div class="option">
+								<label class="label" for="file"></label>
+								<progress
+									id="file"
+									class="progress"
+									value="32"
+									max="100"
+								></progress>
+							</div>
+							<div class="option">
+								<label class="label" for="file"></label>
+								<progress
+									id="file"
+									class="progress"
+									value="32"
+									max="100"
+								></progress>
+							</div>
+							<div class="option">
+								<label class="label" for="file"></label>
+								<progress
+									id="file"
+									class="progress"
+									value="32"
+									max="100"
+								></progress>
 							</div>
 						</div>
 					</div>

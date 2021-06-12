@@ -60,6 +60,7 @@ let dropZone3 = document.getElementById('dropzone-3')
 
 
 const quizHandler = () => {
+    quizRatings = []
     let firstRankedElement = dropZone1.lastElementChild;
     if (firstRankedElement) {
         quizRatings.push({
@@ -85,10 +86,49 @@ const quizHandler = () => {
         })
     }
 
-    console.log(quizRatings)
+    fetch()
 }
 
 quizButton.addEventListener('click', quizHandler)
+
+let topTenIngredients = [
+    {
+        id: 'almond',
+        name: 'almond',
+        ratings: 50,
+    },
+    {
+        id: 'bcd',
+        name: 'bcd',
+        ratings: 70,
+    },
+    {
+        id: 'efg',
+        name: 'efg',
+        ratings: 20,
+    },
+    {
+        id: 'xyz',
+        name: 'xyz',
+        ratings: 30,
+    },
+    {
+        id: 'mno',
+        name: 'mno',
+        ratings: 14,
+    },
+];
+
+topTenIngredients.sort((ingredientA, ingredientB) => ingredientB.ratings - ingredientA.ratings)
+const progressSection = document.getElementById('progress-report');
+
+let childCount = 0
+
+for (let i = 0; i < topTenIngredients.length; i++) {
+    progressSection.children[i].children[0].innerText = topTenIngredients[i].name;
+    progressSection.children[i].children[1].setAttribute('value', topTenIngredients[i].ratings.toString());
+    progressSection.children[i].children[1].innerText = topTenIngredients[i].ratings
+}
 
 function onDragStart(event) {
     event
