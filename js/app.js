@@ -62,13 +62,29 @@ function onDragOver(event) {
 
 function onDrop(event) {
     const id = event.dataTransfer.getData('text/plain');
-    console.log(id)
     const draggableElement = document.getElementById(id);
-    console.log(draggableElement)
+    console.log('dratg', draggableElement)
+
     const dropzone = event.target;
-    console.log(dropzone)
-    dropzone.appendChild(draggableElement);
-    event
-        .dataTransfer
-        .clearData()
+    console.log('dropzoen', dropzone)
+    let child = dropzone.lastElementChild;
+    console.log('child', child)
+    if (child && child.nodeName !== 'P') {
+        alert('An Ingredient is already present here');
+        return
+    }
+    if (!child) {
+        dropzone.appendChild(draggableElement);
+        event
+            .dataTransfer
+            .clearData()
+        return
+    }
+    if (child.nodeName === 'P') {
+        dropzone.removeChild(child)
+        dropzone.appendChild(draggableElement);
+        event
+            .dataTransfer
+            .clearData()
+    }
 }
