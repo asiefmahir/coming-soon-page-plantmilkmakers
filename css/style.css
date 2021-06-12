@@ -218,8 +218,8 @@ li {
 
 .subscribe-form {
 	margin-top: 2rem;
-	display:flex;
-	width:60rem;
+	display: flex;
+	width: 60rem;
 }
 
 .email-input {
@@ -229,9 +229,9 @@ li {
 	border-radius: 0.5rem 0 0 0.5rem;
 	outline: none;
 	border: 1px solid var(--primary-color);
-	width:100%;
-	background:transparent;
-	height:6rem;
+	width: 100%;
+	background: transparent;
+	height: 6rem;
 }
 .submit-button {
 	margin-right: 0.26rem;
@@ -243,14 +243,11 @@ li {
 	outline: none;
 	font-size: 1.3rem;
 	font-weight: 600;
-
 }
 
 .form-and-social-links {
 	margin-top: 12rem;
 }
-
-
 
 .form-title {
 	color: #112433;
@@ -452,12 +449,11 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
 }
 
 .ingredients-section-card {
 	flex-basis: 21%;
-	margin:1rem;
+	margin: 1rem;
 }
 .ingredients-section-card__image {
 	width: 100%;
@@ -467,17 +463,56 @@ li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top:2rem;
+	margin-top: 2rem;
 }
 .rank-card {
 	padding: 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
-	width:19rem;
-	height:18.4rem;
-	margin-top:2.5rem;
+	width: 19rem;
+	height: 18.4rem;
+	margin-top: 2.5rem;
 }
 
+progress[value]::-webkit-progress-bar {
+	background-color: red;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+progress[value]::-webkit-progress-value {
+	position: relative;
+
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius: 3px;
+
+	/* Let's animate this */
+}
+/* .progress-bar {
+	border: none;
+	border-radius: 50%;
+	width: 40rem;
+	background: crimson;
+}
+
+.progress-bar {
+	color: lightblue;
+}
+
+.progress-bar::-webkit-progress-value {
+	background: lightblue;
+}
+
+.progress-bar::-moz-progress-bar {
+	background: lightcolor;
+}
+
+.progress-bar::-webkit-progress-value {
+	background: var(--primary-color);
+}
+
+.progress-bar::-webkit-progress-bar {
+	background: #f1f1f1;
+} */
 /* .shop__card-button {
 	background-color: var(--primary-color);
 	color: var(--white-color);
@@ -734,8 +769,8 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
-	width:70%;
-	margin:auto;
+	width: 70%;
+	margin: auto;
 }
 
 .footer__social-link-item {

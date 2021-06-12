@@ -50,6 +50,46 @@ nextIcon.addEventListener('click', nextHandler)
 
 // Hero Section Ends
 
+// Quiz Section
+
+let quizRatings = [];
+let quizButton = document.getElementById('quiz-button');
+let dropZone1 = document.getElementById('dropzone-1')
+let dropZone2 = document.getElementById('dropzone-2')
+let dropZone3 = document.getElementById('dropzone-3')
+
+
+const quizHandler = () => {
+    let firstRankedElement = dropZone1.lastElementChild;
+    if (firstRankedElement) {
+        quizRatings.push({
+            id: [firstRankedElement.getAttribute('id')][0],
+            name: [firstRankedElement.getAttribute('id')][0],
+            rating: 5
+        })
+    }
+    let secondRankedElement = dropZone2.lastElementChild;
+    if (secondRankedElement) {
+        quizRatings.push({
+            id: [secondRankedElement.getAttribute('id')][0],
+            name: [secondRankedElement.getAttribute('id')][0],
+            rating: 3
+        })
+    }
+    let thirdRankedElement = dropZone3.lastElementChild;
+    if (thirdRankedElement) {
+        quizRatings.push({
+            id: [thirdRankedElement.getAttribute('id')][0],
+            name: [thirdRankedElement.getAttribute('id')][0],
+            rating: 1
+        })
+    }
+
+    console.log(quizRatings)
+}
+
+quizButton.addEventListener('click', quizHandler)
+
 function onDragStart(event) {
     event
         .dataTransfer
@@ -63,19 +103,19 @@ function onDragOver(event) {
 function onDrop(event) {
     const id = event.dataTransfer.getData('text/plain');
     const draggableElement = document.getElementById(id);
-    // console.log('dratg', draggableElement)
 
     const dropzone = event.target;
-    // console.log('dropzoen', dropzone)
+    console.log('dropzoen', dropzone)
     let child = dropzone.lastElementChild;
 
-    console.log('child', child)
-    if (child && child.nodeName !== 'P') {
+    if (dropzone.nodeName === 'IMG') {
         alert('An Ingredient is already present here');
         return
     }
-
-    if (child && child.nodeName === 'P') {
+    if (child && child.nodeName === 'IMG') {
+        alert('An Ingredient is already present here');
+        return
+    } else if (child && child.nodeName === 'P') {
         dropzone.removeChild(child)
         dropzone.appendChild(draggableElement);
         event
@@ -88,5 +128,4 @@ function onDrop(event) {
             .dataTransfer
             .clearData()
     }
-
 }
