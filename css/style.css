@@ -245,6 +245,15 @@ li {
 	font-weight: 600;
 }
 
+/*rank form section*/
+
+
+
+/*rank form section*/
+
+
+
+
 .form-and-social-links {
 	margin-top: 12rem;
 }
@@ -853,4 +862,12 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+.d-block{
+	display:block;
+}
+
+.d-none{
+	display:none;
 }
