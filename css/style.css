@@ -195,11 +195,23 @@ li {
 	width: 100%;
 }
 
-.hero__title {
-	color: var(--primary-color);
+.hero__image--big {
+	width: 50rem;
+}
+.coming-soon {
+	color: #5fa208;
 	font-size: 4rem;
-	font-weight: bold;
-	line-height: 5rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.hero__title {
+	color: #5fa208;
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 4.5rem;
+	margin-top: 3rem;
 	/* font-family: "Asap", sans-serif; */
 }
 .hero__excerpt {
@@ -263,7 +275,7 @@ li {
 /*rank form section*/
 
 .form-and-social-links {
-	margin-top: 12rem;
+	margin-top: 5rem;
 }
 
 .form-title {
@@ -459,19 +471,20 @@ li {
 }
 .subtitle-rank-button-wrap {
 	position: relative;
-	margin-top: 4rem;
+	margin-top: 6rem;
 }
 .ingredients-section-heading {
 	position: absolute;
 	left: 8rem;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 .button-section {
 	position: absolute;
 	right: 12.5rem;
 	cursor: pointer;
 	width: 18rem;
+	margin-left: 2rem;
 }
 
 .ingredients-section {
@@ -516,8 +529,8 @@ li {
 	padding: 2rem 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
-	width: 70%;
-	height: 26%;
+	max-width: 70%;
+	max-height: 26%;
 	margin-top: 3.3rem;
 	color: var(--primary-color);
 	opacity: 0.6;
@@ -832,7 +845,6 @@ li {
 	margin-left: 0;
 }
 
-
 .footer__social-moto {
 	margin-top: 1rem;
 	margin-left: 1rem;
@@ -1008,7 +1020,7 @@ li {
 	border-radius: 2rem;
 }
 .quiz-main-image {
-	width: 65%;
+	width: 100%;
 }
 
 .quiz-image-subtitle-wrapper {
