@@ -596,6 +596,16 @@ li {
 	background: transparent;
 	color: var(--primary-color);
 }
+.active-button {
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+.secondary-button {
+	background: transparent;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
 
 .why-plant-milk__excerpt {
 	text-align: center;

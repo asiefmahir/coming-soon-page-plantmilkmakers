@@ -54,16 +54,41 @@ nextIcon.addEventListener('click', nextHandler)
 
 let quizRatings = [];
 
-let quizSection = document.getElementById('quiz');
-let resultAndFormSection = document.getElementById('result-and-form-wrapper')
-let backToQuizButton = document.getElementById('back-to-quiz-button');
-let quizButton = document.getElementById('quiz-button');
-let dropZone1 = document.getElementById('dropzone-1')
-let dropZone2 = document.getElementById('dropzone-2')
-let dropZone3 = document.getElementById('dropzone-3')
-let storeButton = document.getElementById('store')
-let homeButton = document.getElementById('store')
+const quizSection = document.getElementById('quiz');
+const resultAndFormSection = document.getElementById('result-and-form-wrapper')
+const backToQuizButton = document.getElementById('back-to-quiz-button');
+const quizButton = document.getElementById('quiz-button');
+const dropZone1 = document.getElementById('dropzone-1')
+const dropZone2 = document.getElementById('dropzone-2')
+const dropZone3 = document.getElementById('dropzone-3')
+const homeSection = document.getElementById('home-section');
+const storeSection = document.getElementById('store-section')
+const storeButton = document.getElementById('store')
+const homeButton = document.getElementById('home')
 
+const heroEmail = document.getElementById('hero-email');
+const heroSubmit = document.getElementById('hero-submit')
+
+homeButton.addEventListener('click', () => {
+    homeSection.classList.remove('hidden');
+    storeSection.classList.add('hidden');
+    homeButton.classList.remove('secondary-button');
+    homeButton.classList.add('active-button');
+
+    storeButton.classList.remove('active-button');
+    storeButton.classList.add('secondary-button');
+
+})
+
+storeButton.addEventListener('click', () => {
+    storeSection.classList.remove('hidden');
+    homeSection.classList.add('hidden')
+    storeButton.classList.remove('secondary-button');
+    storeButton.classList.add('active-button');
+
+    homeButton.classList.remove('active-button');
+    homeButton.classList.add('secondary-button');
+})
 
 
 const quizHandler = () => {
