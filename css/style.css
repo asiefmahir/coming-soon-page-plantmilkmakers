@@ -241,10 +241,8 @@ li {
 	font-weight: 600;
 }
 
-
 .hero__social-link-items {
 	text-align: center;
-	
 }
 
 .hero__social-link-item {
@@ -637,6 +635,7 @@ li {
 }
 .why-plant-milk__image {
 	width: 74rem;
+	object-fit: cover;
 }
 .why-plant-milk__our-speciality-items {
 	margin-top: 2.5rem;
@@ -774,7 +773,6 @@ li {
 
 .footer {
 	margin-top: 3rem;
-	background: #f6f6f6;
 	padding-top: 8rem;
 }
 
@@ -818,7 +816,6 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
-	
 }
 
 .footer__social-link-item {
@@ -949,7 +946,6 @@ li {
 	font-weight: 600;
 }
 
-
 .back-to-quiz-button {
 	background-color: #dbdbdb;
 	height: fit-content;
@@ -957,8 +953,8 @@ li {
 	color: white;
 	border-radius: 0.5rem;
 	margin-left: 14rem;
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 }
 
 .back-to-quiz-img {
