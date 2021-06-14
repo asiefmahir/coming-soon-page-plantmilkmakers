@@ -241,6 +241,22 @@ li {
 	font-weight: 600;
 }
 
+
+.hero__social-link-items {
+	text-align: center;
+	
+}
+
+.hero__social-link-item {
+	background-color: #fff;
+	padding: 1.5rem;
+	text-align: center;
+	border-radius: 50%;
+	width: 5rem;
+	height: 5rem;
+	box-shadow: 0px 5px 6px #80c62726;
+	margin: 1rem;
+}
 /*rank form section*/
 
 /*rank form section*/
@@ -452,7 +468,7 @@ li {
 	position: absolute;
 	left: 8rem;
 	font-weight: 600;
-	font-size: 1.2srem;
+	font-size: 1.2rem;
 }
 .button-section {
 	position: absolute;
@@ -802,8 +818,7 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
-	width: 70%;
-	margin: auto;
+	
 }
 
 .footer__social-link-item {
@@ -934,14 +949,6 @@ li {
 	font-weight: 600;
 }
 
-.back-to-quiz {
-	background-color: #dbdbdb;
-	height: fit-content;
-	padding: 1.5rem 2rem;
-	color: white;
-	border-radius: 0.5rem;
-	margin-left: 14rem;
-}
 
 .back-to-quiz-button {
 	background-color: #dbdbdb;
@@ -950,6 +957,8 @@ li {
 	color: white;
 	border-radius: 0.5rem;
 	margin-left: 14rem;
+	display:flex;
+	align-items:center;
 }
 
 .back-to-quiz-img {

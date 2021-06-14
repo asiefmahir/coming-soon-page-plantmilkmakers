@@ -74,6 +74,7 @@ html{
 	border: 1px solid var(--primary-color);
 	background: transparent;
 	margin:1rem;
+	color:#bababa;
 }
 
 .email-field::placeholder{
