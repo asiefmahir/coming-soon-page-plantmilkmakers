@@ -60,6 +60,10 @@ let dropZone3 = document.getElementById('dropzone-3')
 
 
 const quizHandler = () => {
+    // fetch()
+    //     .then(() =>)
+    //     .then(()=>)
+
     quizRatings = []
     let firstRankedElement = dropZone1.lastElementChild;
     if (firstRankedElement) {
@@ -86,7 +90,9 @@ const quizHandler = () => {
         })
     }
 
-    fetch()
+    console.log(quizRatings);
+    resultAndFormSection.classList.remove('hidden');
+    quizSection.classList.add('hidden')
 }
 
 quizButton.addEventListener('click', quizHandler)
@@ -169,3 +175,14 @@ function onDrop(event) {
             .clearData()
     }
 }
+
+// Result Section
+
+let quizSection = document.getElementById('quiz');
+let resultAndFormSection = document.getElementById('result-and-form-wrapper')
+let backToQuizButton = document.getElementById('back-to-quiz-button');
+
+backToQuizButton.addEventListener('click', () => {
+    resultAndFormSection.classList.add('hidden')
+    quizSection.classList.remove('hidden')
+})
