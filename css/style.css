@@ -211,6 +211,9 @@ li {
 	opacity: 0.7;
 	/* text-align: justify; */
 }
+.header-section-social-links {
+	margin-top: 2rem;
+}
 
 .subscribe-form {
 	margin-top: 2rem;
@@ -260,10 +263,6 @@ li {
 /*rank form section*/
 
 /*rank form section*/
-
-.form-and-social-links {
-	margin-top: 12rem;
-}
 
 .form-and-social-links {
 	margin-top: 12rem;
@@ -826,9 +825,6 @@ li {
 	margin-left: 0;
 }
 
-.header-section-social-links {
-	margin-top: 2rem;
-}
 
 .footer__social-moto {
 	margin-top: 1rem;
