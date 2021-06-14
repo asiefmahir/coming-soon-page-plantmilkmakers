@@ -59,38 +59,38 @@
 							</form>
 							<ul
 								class="
-									footer__social-link-items
+									hero__social-link-items
 									flex-space-evenly
 									header-section-social-links
 								"
 							>
-								<li class="footer__social-link-item">
-									<a href="#" class="footer__social-link">
+								<li class="hero__social-link-item">
+									<a href="#" class="hero__social-link">
 										<img src="./assets/icons/fb.svg" alt="facebook" />
 									</a>
 								</li>
-								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+								<li class="hero__social-link-item">
+									<a href="" class="hero__social-link">
 										<img src="./assets/icons/yt.svg" alt="youtube" />
 									</a>
 								</li>
-								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+								<li class="hero__social-link-item">
+									<a href="" class="hero__social-link">
 										<img src="./assets/icons/pin.svg" alt="pinterest" />
 									</a>
 								</li>
-								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+								<li class="hero__social-link-item">
+									<a href="" class="hero__social-link">
 										<img src="./assets/icons/twitter.svg" alt="twitter" />
 									</a>
 								</li>
-								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+								<li class="hero__social-link-item">
+									<a href="" class="hero__social-link">
 										<img src="./assets/icons/instagram.svg" alt="" />
 									</a>
 								</li>
 							</ul>
-							<div class="footer__social-moto">
+							<div class="hero__social-moto">
 								Our community is growing. Join us!
 							</div>
 						</div>
@@ -152,7 +152,7 @@
 			</div>
 		</header>
 
-		<section class="quiz ">
+		<section class="quiz" id="quiz">
 			<div class="container">
 				<div class="shop__icon">
 					<img src="./assets/icons/header-img.png" alt="stylish icon" />
@@ -370,108 +370,161 @@
 						</div>
 					</div>
 				</div>
-<<<<<<< HEAD
 			</div>
 		</section>
-
-		<div id="result-and-form-wrapper" class="result-and-form-wrapper hidden">
+		<div class="result-and-form-wrapper hidden" id="result-and-form-wrapper">
 			<div class="container">
 				<div class="shop__icon">
 					<img src="./assets/icons/header-img.png" alt="stylish icon" />
 				</div>
 				<h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
-				<div class="flex-space-between">
-					<div class="form-and-image-wrapper">
-						<form action="" class="form">
-							<input
-								type="text"
-								name=""
-								id=""
-								class="name-field"
-								placeholder="Enter your full name"
-							/>
-							<input
-								type="email"
-								name=""
-								id=""
-								class="email-field"
-								placeholder="Enter your email"
-							/>
-							<button type="submit">Submit</button>
-						</form>
-						<h3 class="image-title">
-							Enter Drawing to win over $5000 in products and prices!
-						</h3>
+
+				<div class="subtitle-rank-button-wrap">
+					<form action="" class="form">
+						<input
+							type="text"
+							name=""
+							id=""
+							class="name-field"
+							placeholder="Enter your full name"
+						/>
+						<input
+							type="email"
+							name=""
+							id=""
+							class="email-field"
+							placeholder="Enter your email"
+						/>
+						<button class="submit-button" type="submit">Submit</button>
+					</form>
+					<div
+						class="back-to-quiz-button"
+						id="back-to-quiz-button"
+					>
+						<img
+							class="back-to-quiz-img"
+							src="./assets/icons/bar.svg"
+							alt="bar"
+						/>
+						<span class="back-to-quiz-text">Back to Quiz</span>
+					</div>
+				</div>
+
+				<div class="quiz-result-and-rank-wrapper">
+					<div class="quiz-image-subtitle-wrapper">
+						<div class="quiz-subtitle">
+							Enter drawing to win over $5,000 in products and prizes!
+						</div>
 						<img
 							src="./assets/images/Homepage/I Buy in Store.svg"
 							alt=""
-							class="image"
+							class="quiz-main-image"
 						/>
 					</div>
 					<div class="result-section">
-						<button id="back-to-quiz-button">Back to Quiz</button>
-						<!-- <div class="progress-report">
+						<div class="progress-report">
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
 							<div class="first-option">
-								<div class="label-and-score-wrapper">
-									<label for="first-option">Almond</label>
-									<span class="score">50</span>
-								</div>
-								<div class="parent">
-									<div class="child"></div>
-								</div>
+								<div class="progress-label"></div>
 							</div>
-						</div> -->
-						<div class="progress-report" id="progress-report">
-							<div class="option">
-								<label class="label" for="file"></label>
-								<progress
-									id="file"
-									class="progress"
-									value="32"
-									max="100"
-								></progress>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
 							</div>
-							<div class="option">
-								<label class="label" for="file"></label>
-								<progress
-									id="file"
-									class="progress"
-									value="32"
-									max="100"
-								></progress>
+							<div class="first-option">
+								<div class="progress-label"></div>
 							</div>
-							<div class="option">
-								<label class="label" for="file"></label>
-								<progress
-									id="file"
-									class="progress"
-									value="32"
-									max="100"
-								></progress>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
 							</div>
-							<div class="option">
-								<label class="label" for="file"></label>
-								<progress
-									id="file"
-									class="progress"
-									value="32"
-									max="100"
-								></progress>
+							<div class="first-option">
+								<div class="progress-label"></div>
 							</div>
-							<div class="option">
-								<label class="label" for="file"></label>
-								<progress
-									id="file"
-									class="progress"
-									value="32"
-									max="100"
-								></progress>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
+							</div>
+
+							<div class="label-and-score-wrapper flex-space-between">
+								<label for="first-option" class="label-and-score-text"
+									>Oat Milk</label
+								>
+								<span class="score">50</span>
+							</div>
+							<div class="first-option">
+								<div class="progress-label"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-=======
->>>>>>> a04727ebdec1bf1e524995f39880db05cd5668d9
 			</div>
 		</div>
 
@@ -483,89 +536,104 @@
 				What is your current source for plant milk?
 			</h5>
 			<div class="why-plant-milk__buttons">
-				<button class="why-plant-milk__button why-plant-milk__button--primary">
+				<button
+					class="why-plant-milk__button why-plant-milk__button--primary"
+					id="store"
+				>
 					I Buy in Store
 				</button>
 				<button
 					class="why-plant-milk__button why-plant-milk__button--secondary"
+					id="home"
 				>
 					I Make at Home
 				</button>
 			</div>
-			<p class="why-plant-milk__excerpt">
-				Retail store plant milk varieties have clear environmental and
-				humanitarian<br />
-				advantages over cows milk. Besides from being more costly,
-				unfortunately<br />
-				commercialization introduces a host of additives we can do without.
-			</p>
-			<div class="why-plant-milk__images-wrapper">
-				<img
-					src="./assets/images/Homepage/I Buy in Store.png"
-					alt=""
-					class="why-plant-milk__image"
-				/>
+			<div class="store-section">
+				<p class="why-plant-milk__excerpt">
+					Retail store plant milk varieties have clear environmental and
+					humanitarian<br />
+					advantages over cows milk. Besides from being more costly,
+					unfortunately<br />
+					commercialization introduces a host of additives we can do without.
+				</p>
+				<div class="why-plant-milk__images-wrapper">
+					<img
+						src="./assets/images/Homepage/I Buy in Store.png"
+						alt=""
+						class="why-plant-milk__image"
+					/>
+				</div>
+				<ul class="why-plant-milk__our-speciality-items flex-space-evenly">
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+						<span class="why-plant-milk__our-speciality-text">
+							Emulsifiers
+						</span>
+					</li>
+
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+						<span class="why-plant-milk__our-speciality-text">
+							Thickeners
+						</span>
+					</li>
+
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+						<span class="why-plant-milk__our-speciality-text">
+							Synthetic Vitamins
+						</span>
+					</li>
+
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+
+						<span class="why-plant-milk__our-speciality-text">
+							Stabilizers
+						</span>
+					</li>
+
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+						<span class="why-plant-milk__our-speciality-text">
+							Lab Flavors
+						</span>
+					</li>
+
+					<li class="why-plant-milk__our-speciality-item">
+						<img
+							class="why-plant-milk__our-speciality-image"
+							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+							alt=""
+						/>
+						<span class="why-plant-milk__our-speciality-text">
+							Preservatives
+						</span>
+					</li>
+				</ul>
 			</div>
-			<ul class="why-plant-milk__our-speciality-items flex-space-evenly">
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-					<span class="why-plant-milk__our-speciality-text"> Emulsifiers </span>
-				</li>
-
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-					<span class="why-plant-milk__our-speciality-text"> Thickeners </span>
-				</li>
-
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-					<span class="why-plant-milk__our-speciality-text">
-						Synthetic Vitamins
-					</span>
-				</li>
-
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-
-					<span class="why-plant-milk__our-speciality-text"> Stabilizers </span>
-				</li>
-
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-					<span class="why-plant-milk__our-speciality-text"> Lab Flavors </span>
-				</li>
-
-				<li class="why-plant-milk__our-speciality-item">
-					<img
-						class="why-plant-milk__our-speciality-image"
-						src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-						alt=""
-					/>
-					<span class="why-plant-milk__our-speciality-text">
-						Preservatives
-					</span>
-				</li>
-			</ul>
+			<div class="home-section hidden">hello</div>
 		</section>
 
 		<section class="shop">
