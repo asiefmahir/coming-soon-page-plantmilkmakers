@@ -933,6 +933,15 @@ li {
 	margin-left: 14rem;
 }
 
+.back-to-quiz-button {
+	background-color: #dbdbdb;
+	height: fit-content;
+	padding: 1.5rem 2rem;
+	color: white;
+	border-radius: 0.5rem;
+	margin-left: 14rem;
+}
+
 .back-to-quiz-img {
 }
 
@@ -986,6 +995,13 @@ li {
 	width: 80%;
 	height: 1.2rem;
 	border-radius: 2rem;
+}
+.quiz-main-image {
+	width: 65%;
+}
+
+.quiz-image-subtitle-wrapper {
+	text-align: center;
 }
 /*progress label nth child styled start from here*/
 
