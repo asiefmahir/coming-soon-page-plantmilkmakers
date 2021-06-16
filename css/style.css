@@ -96,7 +96,7 @@ li {
 }
 
 .next {
-	right: 8rem;
+	right: 6.5rem;
 }
 
 .nav {
@@ -195,11 +195,23 @@ li {
 	width: 100%;
 }
 
-.hero__title {
-	color: var(--primary-color);
+.hero__image--big {
+	width: 70rem;
+}
+.coming-soon {
+	color: #5fa208;
 	font-size: 4rem;
-	font-weight: bold;
-	line-height: 5rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.hero__title {
+	color: #5fa208;
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 4.5rem;
+	margin-top: 3rem;
 	/* font-family: "Asap", sans-serif; */
 }
 .hero__excerpt {
@@ -244,10 +256,8 @@ li {
 	font-weight: 600;
 }
 
-
 .hero__social-link-items {
 	text-align: center;
-	
 }
 
 .hero__social-link-item {
@@ -265,7 +275,7 @@ li {
 /*rank form section*/
 
 .form-and-social-links {
-	margin-top: 12rem;
+	margin-top: 5rem;
 }
 
 .form-title {
@@ -461,19 +471,20 @@ li {
 }
 .subtitle-rank-button-wrap {
 	position: relative;
-	margin-top: 4rem;
+	margin-top: 6rem;
 }
 .ingredients-section-heading {
 	position: absolute;
 	left: 8rem;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 .button-section {
 	position: absolute;
 	right: 12.5rem;
 	cursor: pointer;
 	width: 18rem;
+	margin-left: 2rem;
 }
 
 .ingredients-section {
@@ -489,7 +500,7 @@ li {
 }
 
 .ingredients-section-card {
-	flex-basis: 22.9%;
+	flex-basis: 22%;
 	margin: 1rem;
 }
 .ingredients-section-card__image {
@@ -518,8 +529,8 @@ li {
 	padding: 2rem 2rem;
 	border: 1px dashed var(--primary-color);
 	border-radius: 5px;
-	width: 70%;
-	height: 26%;
+	min-width: 70%;
+	min-height: 26%;
 	margin-top: 3.3rem;
 	color: var(--primary-color);
 	opacity: 0.6;
@@ -611,6 +622,16 @@ li {
 	background: transparent;
 	color: var(--primary-color);
 }
+.active-button {
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+.secondary-button {
+	background: transparent;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
 
 .why-plant-milk__excerpt {
 	text-align: center;
@@ -626,6 +647,7 @@ li {
 }
 .why-plant-milk__image {
 	width: 74rem;
+	object-fit: cover;
 }
 .why-plant-milk__our-speciality-items {
 	margin-top: 2.5rem;
@@ -763,7 +785,6 @@ li {
 
 .footer {
 	margin-top: 3rem;
-	background: #f6f6f6;
 	padding-top: 8rem;
 }
 
@@ -807,7 +828,6 @@ li {
 
 .footer__social-link-items {
 	text-align: center;
-	
 }
 
 .footer__social-link-item {
@@ -824,7 +844,6 @@ li {
 .footer__social-link-item:nth-child(1) {
 	margin-left: 0;
 }
-
 
 .footer__social-moto {
 	margin-top: 1rem;
@@ -935,7 +954,6 @@ li {
 	font-weight: 600;
 }
 
-
 .back-to-quiz-button {
 	background-color: #dbdbdb;
 	height: fit-content;
@@ -943,8 +961,8 @@ li {
 	color: white;
 	border-radius: 0.5rem;
 	margin-left: 14rem;
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 }
 
 .back-to-quiz-img {
@@ -1002,7 +1020,7 @@ li {
 	border-radius: 2rem;
 }
 .quiz-main-image {
-	width: 65%;
+	width: 100%;
 }
 
 .quiz-image-subtitle-wrapper {
@@ -1075,4 +1093,64 @@ li {
 }
 .hidden {
 	display: none;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+	background: #ffffff;
+	-webkit-animation: load1 1s infinite ease-in-out;
+	animation: load1 1s infinite ease-in-out;
+	width: 1em;
+	height: 4em;
+}
+.loader {
+	color: #ffffff;
+	text-indent: -9999em;
+	margin: 88px auto;
+	position: relative;
+	font-size: 11px;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+	position: absolute;
+	top: 0;
+	content: "";
+}
+.loader:before {
+	left: -1.5em;
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+.loader:after {
+	left: 1.5em;
+}
+@-webkit-keyframes load1 {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 0;
+		height: 4em;
+	}
+	40% {
+		box-shadow: 0 -2em;
+		height: 5em;
+	}
+}
+@keyframes load1 {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 0;
+		height: 4em;
+	}
+	40% {
+		box-shadow: 0 -2em;
+		height: 5em;
+	}
 }
