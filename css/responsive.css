@@ -131,7 +131,8 @@
 	}
 	.hero__excerpt {
 		font-size: 1rem;
-		line-height: 1.5rem;
+		line-height: 2.3rem;
+		margin-top: 4rem;
 	}
 }
 
@@ -155,7 +156,7 @@
 }
 @media (max-width:428px){
 	.hero__image {
-		width: 30rem;
+		width: 100%;
 	}
 }
 @media (max-width:360px){
@@ -350,6 +351,10 @@
 		font-weight: 700;
 		margin-left: 2.5rem;
 	}
+
+	.why-plant-milk__button{
+		padding:1rem;
+	}
 }
 /*why 3d seciton*/
 
@@ -452,11 +457,19 @@
 		height:2.5rem;
 	}
 	.footer__social-link-item {
-		padding: 1rem;
-		width: 4.2rem;
-		height: 4.2rem;
-		
+		padding: 0.9rem 0.7rem;
+		width: 3.5rem;
+		height: 3.5rem;
 	}
+	.footer__social-link-item img {
+		margin-left: 0;
+		width:1.5rem;
+	}
+	
+	.footer__social-link-item:nth-child(1) img{
+		width:1rem;
+	}
+	
 }
 
 /*footer section*/
