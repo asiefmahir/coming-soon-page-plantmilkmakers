@@ -45,8 +45,8 @@ const nextHandler = () => {
     console.log(clickCount)
 }
 
-prevIcon.addEventListener('click', prevHandler)
-nextIcon.addEventListener('click', nextHandler)
+// prevIcon.addEventListener('click', prevHandler)
+// nextIcon.addEventListener('click', nextHandler)
 
 // Hero Section Ends
 
