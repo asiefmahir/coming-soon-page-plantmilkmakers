@@ -1,3 +1,4 @@
+/*hero section*/
 @media (max-width: 1440px) {
 	.hero__image {
 		width: 70rem;
@@ -26,9 +27,6 @@
 	}
 	.menu {
 		margin-left: 5rem;
-	}
-	.why-plant-milk__our-speciality-item {
-		padding: 1rem 3rem;
 	}
 }
 
@@ -86,19 +84,43 @@
 	.hero__image {
 		width: 55rem;
 	}
-	.why-plant-milk__our-speciality-item {
-		padding: 1.5rem;
+	
+}
+
+@media (max-width: 1104px) {
+	.menu {
+		margin-left: 2rem;
 	}
-	.why-plant-milk__our-speciality-image {
-		width: 3rem;
+	.signin-cart-wrapper {
+		margin-left: 3rem;
+	}
+	.logo__image {
+		width: 11rem;
 	}
 }
+
+
+
 
 @media (max-width: 1062px) {
 	.hero__image {
 		width: 52rem;
 	}
 }
+
+
+@media (max-width: 1061px) {
+	.menu {
+		margin-left: 1rem;
+	}
+	.signin-cart-wrapper {
+		margin-left: 2rem;
+	}
+	.logo__image {
+		width: 11rem;
+	}
+}
+
 
 @media (max-width: 1024px) {
 	.hero__image {
@@ -111,6 +133,9 @@
 		font-size: 1.2rem;
 	}
 }
+
+
+
 @media (max-width: 983px) {
 	.hero__image {
 		width: 48rem;
@@ -124,21 +149,30 @@
 	}
 }
 
+
+
 @media (max-width: 950px) {
 	.hero__image {
 		width: 45rem;
 	}
 }
+
+
 @media (max-width: 908px) {
 	.hero__image {
 		width: 42rem;
 	}
 }
+
+
+
 @media (max-width: 862px) {
 	.hero__image {
 		width: 40rem;
 	}
 }
+
+
 
 @media (max-width: 830px) {
 	.hero__image {
@@ -154,6 +188,9 @@
 	}
 }
 
+
+
+
 @media (max-width: 768px) {
 	.hero__image-wrapper {
 		width: 100%;
@@ -163,6 +200,9 @@
 		padding: 1.3rem 9.39rem;
 	}
 }
+
+
+
 @media (max-width: 538px) {
 	.hero__excerpt {
 		margin-top: 7rem;
@@ -172,21 +212,68 @@
 	}
 }
 
+@media (max-width: 664px) {
+	.hero__title {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+
+@media (max-width: 590px) {
+	.hero__title {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
+
+@media (max-width: 570px) {
+	.icon-wrapper {
+		width: 3rem;
+		height: 3rem;
+		padding: 0.8rem;
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 538px) {
+	.hero__excerpt {
+		margin-top: 2rem;
+	}
+}
+
+
+
 @media (max-width: 470px) {
 	.next {
 		right: 5rem;
 	}
 }
-/* @media (max-width: 404px) {
-	.next {
-		right: 10rem;
-	}
-} */
+
+
+
 @media (max-width: 428px) {
 	.hero__image {
 		width: 30rem;
 	}
 }
+
+@media (max-width: 404px) {
+	.next {
+		right: 4.5rem;
+	}
+}
+
+@media (max-width: 330px) {
+	.next {
+		right: 4rem;
+	}
+}
+@media (max-width: 325px) {
+	.next {
+		right: 3.5rem;
+	}
+}
+
 
 @media (max-width: 320px) {
 	.submit-button {
@@ -194,7 +281,17 @@
 	}
 }
 
-/*ingredients section media*/
+
+
+
+/*hero section*/
+
+
+
+
+/*rank section*/
+
+
 @media (max-width: 1796px) {
 	.rank-card {
 		width: 71%;
@@ -209,6 +306,8 @@
 		width: 16rem;
 	}
 }
+
+
 @media (max-width: 786px) {
 	.ingredients-section-heading {
 		left: 2rem;
@@ -226,6 +325,7 @@
 	}
 }
 
+
 @media (max-width: 588px) {
 	.ingredients-section-heading {
 		left: -1rem;
@@ -242,24 +342,26 @@
 		font-size: 0.9rem;
 	}
 }
-/*ingredients section media*/
 
-/*rank section media*/
 @media (max-width: 768px) {
 	.form {
 		flex-direction: column;
 	}
+  
 
 	.subtitle-rank-button-wrap {
 		flex-direction: column;
 	}
 
+  
 	.back-to-quiz-button {
 		margin-left: 0;
 		width: 40%;
 		margin: auto;
 		margin-top: 1rem;
 	}
+  
+  
 	.quiz-result-and-rank-wrapper {
 		flex-direction: column;
 	}
@@ -270,177 +372,127 @@
 	}
 }
 
+
+
+@media (max-width: 480px) {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 3rem;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 8rem;
+		margin-left: 2rem;
+	}
+	.see-results {
+		font-size: 1rem;
+	}
+	.see-results-image {
+		width: 20%;
+	}
+}
+
 @media (max-width: 360px) {
-	.back-to-quiz-button {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 3rem;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 7rem;
+		margin-left: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.see-results {
+		font-size: 1rem;
+		margin-top: 0.5rem;
+		text-align: center;
+	}
+	.see-results-image {
+		width: 20%;
+	}
+  
+  .back-to-quiz-button {
 		width: 90%;
+	}
+}
+
+@media (max-width: 350px) {
+	.rank-card-text {
+		text-align: center;
+	}
+}
+@media (max-width: 345px) {
+	.rank-card {
+		min-width: 70%;
+		min-height: 23%;
+	}
+}
+@media (max-width: 325px) {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 2rem;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 8rem;
+		margin-left: 2rem;
+		/* display: block; */
+	}
+	.see-results {
+		font-size: 1rem;
+	}
+	.see-results-image {
+		width: 20%;
 	}
 }
 /*rank section media*/
 
-@media (max-width: 1104px) {
-	.menu {
-		margin-left: 2rem;
-	}
-	.signin-cart-wrapper {
-		margin-left: 3rem;
-	}
-	.logo__image {
-		width: 11rem;
+
+
+/*why 3d section*/
+
+
+@media (max-width: 1308px) {
+
+	.why-plant-milk__our-speciality-item {
+		padding: 1rem 3rem;
 	}
 }
 
-@media (max-width: 1061px) {
-	.menu {
-		margin-left: 1rem;
-	}
-	.signin-cart-wrapper {
-		margin-left: 2rem;
-	}
-	.logo__image {
-		width: 11rem;
-	}
 
-	.how-it-works__card:nth-child(odd) {
-		padding: 6rem 1.5rem;
-	}
+@media (max-width: 1135px) {
 
-	.how-it-works__card-image {
-		width: 5rem;
+	.why-plant-milk__our-speciality-item {
+		padding: 1.5rem;
 	}
-
-	.how-it-works__bordered {
-		width: 12rem;
-		height: 12rem;
-		top: -12rem;
-	}
-
-	.how-it-works__dasshed {
-		top: -13rem;
-		width: 14rem;
-		height: 14rem;
-	}
-}
-
-@media (max-width: 1032px) {
-	.menu__item {
-		margin-left: 1rem;
-	}
-
-	.how-it-works__video-wrapper::before {
-		height: 36%;
-	}
-
-	.how-it-works__video-wrapper::after {
-		height: 33%;
-	}
-}
-@media (max-width: 991px) {
-	.menu__item {
-		margin-left: 0.8rem;
-	}
-}
-
-@media (max-width: 972px) {
-	.menu__item {
-		margin-left: 0.5rem;
-	}
-}
-
-@media (max-width: 947px) {
-	.menu__item {
-		margin-left: 0.3rem;
-	}
-	.signin-cart-wrapper {
-		margin-left: 2rem;
-	}
-	.logo__image {
-		width: 10rem;
-	}
-
-	.how-it-works__card:nth-child(1) {
-		padding: 7.2rem 1.5rem;
-	}
-}
-
-@media (max-width: 930px) {
-	.menu__item {
-		margin-left: 0.3rem;
-	}
-	.menu__link {
-		font-size: 1.2rem;
-	}
-	.signin-cart-wrapper {
-		margin-left: 1rem;
-	}
-	.logo__image {
-		width: 8rem;
-	}
-}
-
-@media (max-width: 664px) {
-	.hero__title {
-		font-size: 2rem;
-		line-height: 2rem;
-	}
-}
-@media (max-width: 570px) {
-	.icon-wrapper {
+	.why-plant-milk__our-speciality-image {
 		width: 3rem;
-		height: 3rem;
-		padding: 0.8rem;
-		font-size: 1.3rem;
-	}
-	.icon {
 	}
 }
 
-@media (max-width: 538px) {
-	.hero__excerpt {
-		margin-top: 2rem;
-	}
-}
 
-@media (max-width: 404px) {
-	.next {
-		right: 4.5rem;
-	}
-}
-
-@media (max-width: 590px) {
-	.hero__title {
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-}
 
 @media (max-width: 895px) {
-	.how-it-works__card:nth-child(2) {
-		padding: 6.2rem 1.5rem;
-	}
-
-	.how-it-works__card-image {
-		width: 4rem;
-	}
-
-	.how-it-works__bordered {
-		width: 10rem;
-		height: 10rem;
-		top: -10rem;
-	}
-
-	.how-it-works__dasshed {
-		top: -11rem;
-		width: 12rem;
-		height: 12rem;
-	}
-
-	.how-it-works__video-wrapper::before {
-		height: 33%;
-	}
-
-	.how-it-works__video-wrapper::after {
-		height: 30%;
-	}
 
 	.why-plant-milk__image {
 		width: 100%;
@@ -458,12 +510,6 @@
 }
 
 @media (max-width: 847px) {
-	.signin-cart-wrapper__cart-image {
-		width: 2rem;
-	}
-	.menu__link {
-		font-size: 1.1rem;
-	}
 
 	.why-plant-milk__our-speciality-item {
 		padding: 1rem 2rem;
@@ -475,32 +521,7 @@
 	}
 }
 
-/*tablet devices*/
-
 @media (max-width: 768px) {
-	.signin-cart-wrapper__cart-image {
-		width: 1.8rem;
-	}
-	.menu__link {
-		font-size: 1rem;
-	}
-
-	.how-it-works__cards {
-		flex-direction: column;
-	}
-
-	.how-it-works__card {
-		width: 90%;
-		margin-bottom: 7rem;
-	}
-
-	.how-it-works__video-wrapper::before {
-		height: 30%;
-	}
-
-	.how-it-works__video-wrapper::after {
-		height: 26%;
-	}
 
 	.why-plant-milk__our-speciality-items {
 		flex-direction: column;
@@ -513,8 +534,15 @@
 		margin-left: 2.5rem;
 	}
 }
+/*why 3d seciton*/
 
-/* Shop Section */
+
+
+
+
+
+
+/*shop section*/
 
 @media (max-width: 1024px) {
 	.shop__card-title {
@@ -552,45 +580,11 @@
 		font-weight: 500;
 	}
 }
+/*shop section*/
 
-/* Recipies Section */
 
-@media (max-width: 993px) {
-	.popular-recipies__card-text {
-		font-size: 1.4rem;
-	}
-}
 
-@media (max-width: 893px) {
-	.popular-recipies__card-text {
-		font-size: 1.2rem;
-		line-height: 2.2rem;
-	}
-}
 
-@media (max-width: 793px) {
-	.popular-recipies__card-text {
-		font-size: 1.1rem;
-		line-height: 2rem;
-	}
-}
-
-@media (max-width: 768px) {
-	.popular-recipies__title {
-		font-size: 3rem;
-	}
-	.popular-recipies__cards {
-		display: flex;
-		flex-direction: column;
-	}
-	.popular-recipies__card {
-		width: 100%;
-		margin-top: 2rem;
-	}
-	.popular-recipies__card-text {
-		font-size: 2rem;
-	}
-}
 
 /*footer Section*/
 @media (max-width: 1184px) {
@@ -633,87 +627,22 @@
 		width: 100%;
 	}
 }
-/* Recent News Section */
 
-@media (max-width: 990px) {
-	.recent-news__card-title {
-		font-size: 1.4rem;
-	}
-}
-
-@media (max-width: 890px) {
-	.recent-news__card-title {
-		font-size: 1.4rem;
-	}
-	.recent-news__card-excerpt {
-		line-height: 1.4rem;
-	}
-}
-
-@media (max-width: 782px) {
-	.recent-news__card-body {
-		padding: 1.2rem;
-	}
-}
-@media (max-width: 768px) {
-	.recent-news__card-body {
-		padding: 1.2rem;
-	}
-	.recent-news__cards {
-		display: flex;
-		flex-direction: column;
-	}
-	.recent-news__card {
-		width: 100%;
-		margin-top: 3rem;
-	}
-	.recent-news__title {
-		font-size: 3.5rem;
-		margin-left: 0;
-	}
-	.recent-news__view-all {
-		margin-right: 0;
-	}
-}
-
-@media (max-width: 360px) {
-	.hero__excerpt {
-		font-size: 0.9rem;
-	}
-	.icon-wrapper {
-		/* top: 46%; */
-	}
-	.next {
-		right: 4rem;
-	}
-	.prev {
-		left: 0rem;
-	}
-	.hero__image {
-		width: 15rem;
-	}
-
-	.hero__social-link-item:nth-child(1) img {
-		/* margin-left: 0; */
-		width: 2.5rem;
-		height: 2.5rem;
-	}
-	.hero__social-link-item {
-		padding: 1rem;
-		width: 4.2rem;
-		height: 4.2rem;
-	}
+@media (max-width:360px){
 	.footer__social-link-item:nth-child(1) img {
 		/* margin-left: 0; */
-		width: 2.5rem;
-		height: 2.5rem;
+		width:2.5rem;
+		height:2.5rem;
 	}
 	.footer__social-link-item {
 		padding: 1rem;
 		width: 4.2rem;
 		height: 4.2rem;
+		
 	}
 }
+
+
 @media (max-width: 340px) {
 	.footer__social-link-item {
 		width: 4rem;
@@ -721,114 +650,22 @@
 	}
 }
 
-@media (max-width: 330px) {
-	.next {
-		right: 4rem;
-	}
-}
 @media (max-width: 325px) {
-	.next {
-		right: 3.5rem;
-	}
 	.footer__social-link-item {
 		width: 3rem;
 		height: 3rem;
 	}
 }
 
-@media (max-width: 480px) {
-	.subtitle-rank-button-wrap {
-	}
-	.ingredients-section-heading {
-		position: absolute;
-		left: 3rem;
-		font-weight: 600;
-		font-size: 1rem;
-	}
-	.button-section {
-		position: absolute;
-		right: -0.5rem;
-		cursor: pointer;
-		width: 8rem;
-		margin-left: 2rem;
-	}
-	.see-results {
-		font-size: 1rem;
-	}
-	.see-results-image {
-		width: 20%;
-	}
-	.ingredients-section-card__image {
-	}
-}
 
-@media (max-width: 360px) {
-	.subtitle-rank-button-wrap {
-	}
-	.ingredients-section-heading {
-		position: absolute;
-		left: 3rem;
-		font-weight: 600;
-		font-size: 1rem;
-	}
-	.button-section {
-		position: absolute;
-		right: -0.5rem;
-		cursor: pointer;
-		width: 7rem;
-		margin-left: 2rem;
-		display: flex;
-		flex-direction: column;
-	}
-	.see-results {
-		font-size: 1rem;
-		margin-top: 0.5rem;
-		text-align: center;
-	}
-	.see-results-image {
-		width: 20%;
-	}
-}
-@media (max-width: 350px) {
-	.rank-card-text {
-		text-align: center;
-	}
-}
-@media (max-width: 345px) {
-	.rank-card {
-		/* padding: 2rem 2rem;
-		border: 1px dashed var(--primary-color);
-		border-radius: 5px;
-		
-		margin-top: 3.3rem;
-		color: var(--primary-color);
-		opacity: 0.6;
-		position: relative; */
-		min-width: 70%;
-		min-height: 23%;
-	}
-}
-@media (max-width: 325px) {
-	.subtitle-rank-button-wrap {
-	}
-	.ingredients-section-heading {
-		position: absolute;
-		left: 2rem;
-		font-weight: 600;
-		font-size: 0.9rem;
-	}
-	.button-section {
-		position: absolute;
-		right: -0.5rem;
-		cursor: pointer;
-		width: 8rem;
-		margin-left: 2rem;
-		/* display: block; */
-	}
-	.see-results {
-		font-size: 1rem;
-	}
-	.see-results-image {
-		width: 20%;
-	}
-}
+/*footer section*/
+
+
+
+
+
+
+
+
+
+
