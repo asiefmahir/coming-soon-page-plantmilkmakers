@@ -47,10 +47,10 @@
 							and environmentally savvy Plant Milk Maker.
 						</p>
 						<div class="form-and-social-links">
-							<h3 class="form-title">
+							<h3 class="form-title" id="form-title">
 								Subscribe now and save up to $50 at launch
 							</h3>
-							<form action="" class="subscribe-form">
+							<form action="" class="subscribe-form" id="subscribe-form">
 								<input
 									placeholder="Enter your email"
 									type="email"
@@ -65,6 +65,7 @@
 									id="hero-submit"
 								/>
 							</form>
+							<div class="loader hidden" id="loader">Loading...</div>
 							<ul
 								class="
 									hero__social-link-items
@@ -73,32 +74,47 @@
 								"
 							>
 								<li class="hero__social-link-item">
-									<a href="#" class="hero__social-link">
+									<a
+										href="https://facebook.com/plantmilkmakers"
+										class="hero__social-link"
+									>
 										<img src="./assets/icons/fb.svg" alt="facebook" />
 									</a>
 								</li>
 								<li class="hero__social-link-item">
-									<a href="" class="hero__social-link">
+									<a
+										href="https://youtube.com/plantmilkmakers"
+										class="hero__social-link"
+									>
 										<img src="./assets/icons/yt.svg" alt="youtube" />
 									</a>
 								</li>
 								<li class="hero__social-link-item">
-									<a href="" class="hero__social-link">
+									<a
+										href="https://pinterest.com/plantmilkmakers"
+										class="hero__social-link"
+									>
 										<img src="./assets/icons/pin.svg" alt="pinterest" />
 									</a>
 								</li>
 								<li class="hero__social-link-item">
-									<a href="" class="hero__social-link">
+									<a
+										href="https://twitter.com/plantmilkmakers"
+										class="hero__social-link"
+									>
 										<img src="./assets/icons/twitter.svg" alt="twitter" />
 									</a>
 								</li>
 								<li class="hero__social-link-item">
-									<a href="" class="hero__social-link">
+									<a
+										href="https://instagram.com/plantmilkmakers"
+										class="hero__social-link"
+									>
 										<img src="./assets/icons/instagram.svg" alt="" />
 									</a>
 								</li>
 							</ul>
-							<div class="hero__social-moto">
+							<div class="footer__social-moto">
 								Our community is growing. Join us!
 							</div>
 						</div>
@@ -123,10 +139,10 @@
 							nut bags.
 						</p>
 						<div class="form-and-social-links">
-							<h3 class="form-title">
+							<h3 class="form-title" id="form-title">
 								Subscribe now and save up to $50 at launch
 							</h3>
-							<form action="" class="subscribe-form">
+							<form action="" class="subscribe-form" id="subscribe-form">
 								<input
 									placeholder="Enter your email"
 									type="email"
@@ -141,6 +157,7 @@
 									id="hero-submit"
 								/>
 							</form>
+							<div class="loader hidden" id="loader">Loading...</div>
 							<ul
 								class="
 									footer__social-link-items
@@ -149,27 +166,47 @@
 								"
 							>
 								<li class="footer__social-link-item">
-									<a href="#" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://facebook.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/fb.svg" alt="facebook" />
 									</a>
 								</li>
 								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://youtube.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/yt.svg" alt="youtube" />
 									</a>
 								</li>
 								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://pinterest.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/pin.svg" alt="pinterest" />
 									</a>
 								</li>
 								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://twitter.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/twitter.svg" alt="twitter" />
 									</a>
 								</li>
 								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://instagram.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/instagram.svg" alt="" />
 									</a>
 								</li>
@@ -198,10 +235,10 @@
 							Choose from 10 bulk or single use pod milk making ingredients.
 						</p>
 						<div class="form-and-social-links">
-							<h3 class="form-title">
+							<h3 class="form-title" id="form-title">
 								Subscribe now and save up to $50 at launch
 							</h3>
-							<form action="" class="subscribe-form">
+							<form action="" class="subscribe-form" id="subscribe-form">
 								<input
 									placeholder="Enter your email"
 									type="email"
@@ -216,6 +253,7 @@
 									id="hero-submit"
 								/>
 							</form>
+							<div class="loader hidden" id="loader">Loading...</div>
 							<ul
 								class="
 									footer__social-link-items
@@ -260,7 +298,11 @@
 									</a>
 								</li>
 								<li class="footer__social-link-item">
-									<a href="" class="footer__social-link">
+									<a
+										target="_blank"
+										href="https://instagram.com/plantmilkmakers"
+										class="footer__social-link"
+									>
 										<img src="./assets/icons/instagram.svg" alt="" />
 									</a>
 								</li>
@@ -301,8 +343,12 @@
 						Drag Ingredient to the preferred rank
 					</h3>
 					<div id="quiz-button" class="button-section flex-space-around">
-						<img src="./assets/icons/bar.svg" alt="bar" />
-						See Results
+						<img
+							src="./assets/icons/bar.svg"
+							alt="bar"
+							class="see-results-image"
+						/>
+						<p class="see-results">See Results</p>
 					</div>
 				</div>
 
@@ -310,6 +356,8 @@
 					<div class="ingredients-section">
 						<ul class="ingredients-section-cards">
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -318,12 +366,15 @@
 									draggable="true"
 									id="almond"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Almond.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -332,12 +383,15 @@
 									draggable="true"
 									id="chashew"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Chashew.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -346,12 +400,15 @@
 									draggable="true"
 									id="coconut"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Coconut.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -360,12 +417,15 @@
 									draggable="true"
 									id="flax"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Flax.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -374,12 +434,15 @@
 									draggable="true"
 									id="hazelnut"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Hazelnut.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -388,12 +451,15 @@
 									draggable="true"
 									id="hemp"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Hemp.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -402,12 +468,15 @@
 									draggable="true"
 									id="oat"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Oat.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -416,12 +485,15 @@
 									draggable="true"
 									id="pea"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Pea.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -430,12 +502,15 @@
 									draggable="true"
 									id="quinoa"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Quinoa.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -444,12 +519,15 @@
 									draggable="true"
 									id="rice"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Rice.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -458,12 +536,15 @@
 									draggable="true"
 									id="soy"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Soy.png"
 									alt=""
 									class="ingredients-section-card__image"
 								/>
 							</li>
 							<li
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 								ondragover="onDragOver(event)"
 								ondrop="onDrop(event)"
 								class="ingredients-section-card"
@@ -472,6 +553,7 @@
 									draggable="true"
 									id="walnut"
 									ondragstart="onDragStart(event)"
+									ontouchstart="onDragStart(event)"
 									src="./assets//images/Coming Soon/Walnut.png"
 									alt=""
 									class="ingredients-section-card__image"
@@ -486,6 +568,8 @@
 								class="rank-card"
 								ondrop="onDrop(event)"
 								ondragover="onDragOver(event)"
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 							>
 								<p class="rank-card-text">Rank 1</p>
 							</div>
@@ -494,6 +578,8 @@
 								class="rank-card"
 								ondrop="onDrop(event)"
 								ondragover="onDragOver(event)"
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 							>
 								<p class="rank-card-text">Rank 2</p>
 							</div>
@@ -502,6 +588,8 @@
 								class="rank-card"
 								ondrop="onDrop(event)"
 								ondragover="onDragOver(event)"
+								ontouchmove="onDragOver(event)"
+								ontouchend="onDrop(event)"
 							>
 								<p class="rank-card-text">Rank 3</p>
 							</div>
@@ -518,23 +606,24 @@
 				<h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
 
 				<div class="subtitle-rank-button-wrap">
-					<form action="" class="form">
+					<form action="" class="form" id="form-info">
 						<input
 							type="text"
 							name=""
-							id=""
+							id="nameField"
 							class="name-field"
 							placeholder="Enter your full name"
 						/>
 						<input
 							type="email"
 							name=""
-							id=""
+							id="emailField"
 							class="email-field"
 							placeholder="Enter your email"
 						/>
 						<button class="submit-button" type="submit">Submit</button>
 					</form>
+					<h3 class="form-title hidden" id="submission-response"></h3>
 					<div class="back-to-quiz-button" id="back-to-quiz-button">
 						<img
 							class="back-to-quiz-img"
@@ -557,105 +646,135 @@
 						/>
 					</div>
 					<div class="result-section">
-						<div class="progress-report">
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
-							</div>
-
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+						<div class="progress-report" id="progress-report">
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
-							</div>
-
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
-							</div>
-
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
-							</div>
-
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
-							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 
-							<div class="label-and-score-wrapper flex-space-between">
-								<label for="first-option" class="label-and-score-text"
-									>Oat Milk</label
-								>
-								<span class="score">50</span>
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
-							<div class="first-option">
-								<div class="progress-label"></div>
+
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
+							</div>
+
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
+							</div>
+
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
+							</div>
+
+							<div>
+								<div class="label-and-score-wrapper flex-space-between">
+									<label
+										for="first-option"
+										class="label-and-score-text"
+									></label>
+									<span class="score"></span>
+								</div>
+								<div class="first-option">
+									<div class="progress-label"></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -915,27 +1034,47 @@
 					/>
 					<ul class="footer__social-link-items flex-space-between">
 						<li class="footer__social-link-item">
-							<a href="#" class="footer__social-link">
+							<a
+								target="_blank"
+								href="https://facebook.com/plantmilkmakers"
+								class="footer__social-link"
+							>
 								<img src="./assets/icons/fb.svg" alt="facebook" />
 							</a>
 						</li>
 						<li class="footer__social-link-item">
-							<a href="" class="footer__social-link">
+							<a
+								target="_blank"
+								href="https://youtube.com/plantmilkmakers"
+								class="footer__social-link"
+							>
 								<img src="./assets/icons/yt.svg" alt="youtube" />
 							</a>
 						</li>
 						<li class="footer__social-link-item">
-							<a href="" class="footer__social-link">
+							<a
+								target="_blank"
+								href="https://pinterest.com/plantmilkmakers"
+								class="footer__social-link"
+							>
 								<img src="./assets/icons/pin.svg" alt="pinterest" />
 							</a>
 						</li>
 						<li class="footer__social-link-item">
-							<a href="" class="footer__social-link">
+							<a
+								target="_blank"
+								href="https://twitter.com/plantmilkmakers"
+								class="footer__social-link"
+							>
 								<img src="./assets/icons/twitter.svg" alt="twitter" />
 							</a>
 						</li>
 						<li class="footer__social-link-item">
-							<a href="" class="footer__social-link">
+							<a
+								target="_blank"
+								href="https://instagram.com/plantmilkmakers"
+								class="footer__social-link"
+							>
 								<img src="./assets/icons/instagram.svg" alt="" />
 							</a>
 						</li>

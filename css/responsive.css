@@ -9,6 +9,16 @@
 		width: 70rem;
 	}
 }
+@media (max-width: 1360px) {
+	.hero__image--big {
+		width: 70rem;
+	}
+}
+@media (min-width: 1361px) {
+	.hero__image--big {
+		width: 100%;
+	}
+}
 
 @media (max-width: 1308px) {
 	.hero__image {
@@ -161,6 +171,17 @@
 		margin-top: 2rem;
 	}
 }
+
+@media (max-width: 470px) {
+	.next {
+		right: 5rem;
+	}
+}
+/* @media (max-width: 404px) {
+	.next {
+		right: 10rem;
+	}
+} */
 @media (max-width: 428px) {
 	.hero__image {
 		width: 30rem;
@@ -381,7 +402,7 @@
 
 @media (max-width: 404px) {
 	.next {
-		right: 3rem;
+		right: 4.5rem;
 	}
 }
 
@@ -663,7 +684,7 @@
 		/* top: 46%; */
 	}
 	.next {
-		right: 3rem;
+		right: 4rem;
 	}
 	.prev {
 		left: 0rem;
@@ -691,5 +712,123 @@
 		padding: 1rem;
 		width: 4.2rem;
 		height: 4.2rem;
+	}
+}
+@media (max-width: 340px) {
+	.footer__social-link-item {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+
+@media (max-width: 330px) {
+	.next {
+		right: 4rem;
+	}
+}
+@media (max-width: 325px) {
+	.next {
+		right: 3.5rem;
+	}
+	.footer__social-link-item {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 3rem;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 8rem;
+		margin-left: 2rem;
+	}
+	.see-results {
+		font-size: 1rem;
+	}
+	.see-results-image {
+		width: 20%;
+	}
+	.ingredients-section-card__image {
+	}
+}
+
+@media (max-width: 360px) {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 3rem;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 7rem;
+		margin-left: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.see-results {
+		font-size: 1rem;
+		margin-top: 0.5rem;
+		text-align: center;
+	}
+	.see-results-image {
+		width: 20%;
+	}
+}
+@media (max-width: 350px) {
+	.rank-card-text {
+		text-align: center;
+	}
+}
+@media (max-width: 345px) {
+	.rank-card {
+		/* padding: 2rem 2rem;
+		border: 1px dashed var(--primary-color);
+		border-radius: 5px;
+		
+		margin-top: 3.3rem;
+		color: var(--primary-color);
+		opacity: 0.6;
+		position: relative; */
+		min-width: 70%;
+		min-height: 23%;
+	}
+}
+@media (max-width: 325px) {
+	.subtitle-rank-button-wrap {
+	}
+	.ingredients-section-heading {
+		position: absolute;
+		left: 2rem;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+	.button-section {
+		position: absolute;
+		right: -0.5rem;
+		cursor: pointer;
+		width: 8rem;
+		margin-left: 2rem;
+		/* display: block; */
+	}
+	.see-results {
+		font-size: 1rem;
+	}
+	.see-results-image {
+		width: 20%;
 	}
 }
