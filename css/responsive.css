@@ -292,21 +292,42 @@
 
 
 @media (max-width: 1796px) {
+	.button-section {
+		margin-left:58.6rem;
+		width:20rem;
+	}
+	
 	.rank-card {
 		width: 71%;
 		height: 25%;
 		margin-top: 2.3rem;
 	}
+
 }
 
 @media (max-width: 1500px) {
 	.button-section {
-		margin-left:44rem;
+		margin-left:45rem;
+		width:18rem;
+	}
+}
+
+
+
+@media (max-width: 1440px) {
+	.button-section {
+		margin-left:40rem;
+		width:16rem;
 	}
 }
 
 
 @media (max-width:1281px){
+	.button-section {
+		margin-left:30rem;
+		width:20rem;
+	}
+	
 	.rank-card{
 		width: 100%;
 		margin-left: -5rem;
@@ -317,17 +338,31 @@
 @media (max-width:1168px){
 	.button-section{
 		margin-left: 23rem;
+		width:18.5rem;
+
 	}	
 }
 @media (max-width:974px){
 	.button-section {
-		margin-left: 14rem;
+		margin-left: 12rem;
+		width: 16rem;
 	}
 }
+
+
+@media (max-width:805px){
+	.button-section {
+		margin-left: 6rem;
+		width: 15rem;
+	}
+}
+
+
 
 @media (max-width:798px){
 	.button-section {
 		margin-left: 7rem;
+		width:20rem;
 	}
 }
 

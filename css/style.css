@@ -184,11 +184,11 @@ li {
 }
 
 .hero__description {
-	width: 35%;
+	width: 45%;
 }
 
 .hero__image-wrapper {
-	width: 60%;
+	width: 50%;
 }
 
 .hero__image {
@@ -200,10 +200,9 @@ li {
 }
 .coming-soon {
 	color: #5fa208;
-	font-size: 4rem;
+	font-size: 8rem;
 	font-weight: 700;
-	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 7rem;
 }
 
 .hero__title {
@@ -244,12 +243,12 @@ li {
 	background: transparent;
 	height: 6rem;
 }
-.submit-button {
+.hero__submit-button {
 	margin-right: 0.26rem;
 	padding: 1.2rem 4rem;
 	color: #ffffff;
 	background-color: var(--primary-color);
-	border-radius: 0 0.5rem 0.5rem 0;
+	border-radius: 0rem 0.5rem 0.5rem 0rem;
 	border: none;
 	outline: none;
 	font-size: 1.3rem;
@@ -258,6 +257,8 @@ li {
 
 .hero__social-link-items {
 	text-align: center;
+	margin: 2rem auto;
+    width: 55%;
 }
 
 .hero__social-link-item {
@@ -268,7 +269,13 @@ li {
 	width: 5rem;
 	height: 5rem;
 	box-shadow: 0px 5px 6px #80c62726;
-	margin: 1rem;
+	margin: 0.5rem;
+}
+
+.hero__social-moto{
+	margin-top:2rem;
+	font-size:2rem;
+	text-align:center;
 }
 /*rank form section*/
 
@@ -367,8 +374,8 @@ li {
 	border-radius: var(--primary-border-radius);
 	font-size: 1.6rem;
 	cursor: pointer;
-	width: 18rem;
-	margin-left: 59rem
+	width: 21rem;
+	margin-left: 65rem
 }
 
 .ingredients-section {
@@ -403,7 +410,7 @@ li {
 }
 .rank-card {
 	padding: 2rem 2rem;
-	border: 1px dashed var(--primary-color);
+	border: 2px dashed var(--primary-color);
 	border-radius: 5px;
 	width:70%;
 	height:26%;
