@@ -374,8 +374,8 @@ li {
 	border-radius: var(--primary-border-radius);
 	font-size: 1.6rem;
 	cursor: pointer;
-	width: 21rem;
-	margin-left: 65rem
+	width: 14%;
+	margin-left: 65rem;	
 }
 
 .ingredients-section {
@@ -443,8 +443,6 @@ li {
 	width: 100%;
 }
 
-.parent {
-}
 .progress-bar {
 	border: none;
 	border-radius: 50%;
