@@ -1,21 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets//images/logo.svg" type="image/svg">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
-			integrity="undefined"
-			crossorigin="anonymous"
-		/>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/responsive.css" />
-
+    <script src="https://use.fontawesome.com/e9ce01f92f.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/"
+      }
+    </script>
+    <title>Coming Soon Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container nav__elements">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="" class="logo__image" />
+          </div>
+        </div>
+      </nav>
+      <section class="hero active" id="first">
+        <h1 class="coming-soon">Coming Soon!</h1>
+        <div class="container flex-space-between hero-flex-wrapper">
+          <section class="hero__description">
+            <h1 class="hero__title">
+              Homemade-DIY plant-based milk making will never be easier!
+            </h1>
+            <p class="hero__excerpt">
+              Join Plant Milk Makers on our mission to enable cleaner
+              plant-based milk consumption and a more sustainable planet. Here
+              you will find products, information and tools to become a health
+              and environmentally savvy Plant Milk Maker.
+            </p>
+            <div class="form-and-social-links">
+              <h3 class="form-title" id="form-title">
+                Subscribe now and save up to $50 at launch
+              </h3>
+              <form action="" class="subscribe-form" id="subscribe-form">
+                <input
+                  placeholder="Enter your email"
+                  type="email"
+                  name="email"
+                  id="hero-email"
+                  class="email-input"
+                />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  class="submit-button"
+                  id="hero-submit"
+                />
+              </form>
+              <div class="loader hidden" id="loader">Loading...</div>
+              <ul
+                class="
+                  hero__social-link-items
+                  flex-space-evenly
+                  header-section-social-links
+                "
+              >
+                <li class="hero__social-link-item">
+                  <a
+                    href="https://facebook.com/plantmilkmakers"
+                    class="hero__social-link"
+                  >
+                    <img src="./assets/icons/fb.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li class="hero__social-link-item">
+                  <a
+                    href="https://youtube.com/plantmilkmakers"
+                    class="hero__social-link"
+                  >
+                    <img src="./assets/icons/yt.svg" alt="youtube" />
+                  </a>
+                </li>
+                <li class="hero__social-link-item">
+                  <a
+                    href="https://pinterest.com/plantmilkmakers"
+                    class="hero__social-link"
+                  >
+                    <img src="./assets/icons/pin.svg" alt="pinterest" />
+                  </a>
+                </li>
+                <li class="hero__social-link-item">
+                  <a
+                    href="https://twitter.com/plantmilkmakers"
+                    class="hero__social-link"
+                  >
+                    <img src="./assets/icons/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+                <li class="hero__social-link-item">
+                  <a
+                    href="https://instagram.com/plantmilkmakers"
+                    class="hero__social-link"
+                  >
+                    <img src="./assets/icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__social-moto">
+                Our community is growing. Join us!
+              </div>
+            </div>
+          </section>
+          <div class="hero__image-wrapper">
+            <img
+              src="./assets/images/Homepage/Hero Area/svg/hero1_img.svg"
+              alt=""
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="hero hidden" id="second">
+        <h1 class="coming-soon">Coming Soon!</h1>
+        <div class="container flex-space-between hero-flex-wrapper">
+          <section class="hero__description">
+            <h1 class="hero__title">3D Strainer Plant Milk Maker</h1>
+            <p class="hero__excerpt">
+              Make plantmilks in your kitchen in minutes without the harmful
+              additives found in commercial plant milks or the messiness of DIY
+              nut bags.
+            </p>
+            <div class="form-and-social-links">
+              <h3 class="form-title" id="form-title">
+                Subscribe now and save up to $50 at launch
+              </h3>
+              <form action="" class="subscribe-form" id="subscribe-form">
+                <input
+                  placeholder="Enter your email"
+                  type="email"
+                  name="email"
+                  id="hero-email"
+                  class="email-input"
+                />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  class="submit-button"
+                  id="hero-submit"
+                />
+              </form>
+              <div class="loader hidden" id="loader">Loading...</div>
+              <ul
+                class="
+                  footer__social-link-items
+                  flex-space-evenly
+                  header-section-social-links
+                "
+              >
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://facebook.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/fb.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://youtube.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/yt.svg" alt="youtube" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://pinterest.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/pin.svg" alt="pinterest" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://instagram.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__social-moto">
+                Our community is growing. Join us!
+              </div>
+            </div>
+          </section>
+          <div class="hero__image-wrapper">
+            <img
+              src="./assets/images/Homepage/Hero Area/svg/hero2_img.svg"
+              alt=""
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="hero hidden" id="third">
+        <h1 class="coming-soon">Coming Soon!</h1>
+        <div class="container flex-space-between hero-flex-wrapper">
+          <section class="hero__description">
+            <h1 class="hero__title">Plant Milk Maker Ingredients</h1>
+            <p class="hero__excerpt">
+              Get the freshest ready to use plant milk making ingredients.
+              Choose from 10 bulk or single use pod milk making ingredients.
+            </p>
+            <div class="form-and-social-links">
+              <h3 class="form-title" id="form-title">
+                Subscribe now and save up to $50 at launch
+              </h3>
+              <form action="" class="subscribe-form" id="subscribe-form">
+                <input
+                  placeholder="Enter your email"
+                  type="email"
+                  name="email"
+                  id="hero-email"
+                  class="email-input"
+                />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  class="submit-button"
+                  id="hero-submit"
+                />
+              </form>
+              <div class="loader hidden" id="loader">Loading...</div>
+              <ul
+                class="
+                  footer__social-link-items
+                  flex-space-evenly
+                  header-section-social-links
+                "
+              >
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/fb.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/yt.svg" alt="youtube" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://www.pinterest.com/plantmilkmakers/"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/pin.svg" alt="pinterest" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a
+                    target="_blank"
+                    href="https://instagram.com/plantmilkmakers"
+                    class="footer__social-link"
+                  >
+                    <img src="./assets/icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__social-moto">
+                Our community is growing. Join us!
+              </div>
+            </div>
+          </section>
+          <div class="hero__image-wrapper">
+            <img
+              src="./assets/images/Homepage/Hero Area/svg/hero3_img.svg"
+              alt=""
+              class="hero__image hero__image--big"
+            />
+          </div>
+        </div>
+      </section>
 		<script src="https://use.fontawesome.com/e9ce01f92f.js"></script>
 		<script type="application/ld+json">
 			{
@@ -322,780 +627,708 @@
 					</div>
 				</div>
 			</section>
+      <img src="./assets/images/wave.svg" alt="" class="wave" />
 
-			<img src="./assets/images/wave.svg" alt="" class="wave" />
 
-			<div class="icon-wrapper prev" id="prev-icon">
-				<i class="fa fa-chevron-left icon"></i>
-			</div>
-			<div class="icon-wrapper next" id="next-icon">
-				<i class="fa fa-chevron-right icon"></i>
-			</div>
-		</header>
-
-		<section class="quiz" id="quiz">
-			<div class="container">
-				<div class="shop__icon">
-					<img src="./assets/icons/header-img.png" alt="stylish icon" />
+      <!-- <div class="icon-wrapper prev" id="prev-icon">
+					<i class="fa fa-chevron-left icon"></i>
 				</div>
-				<h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
-				<div class="subtitle-rank-button-wrap">
-					<h3 class="ingredients-section-heading">
-						Drag Ingredient to the preferred rank
-					</h3>
-					<div id="quiz-button" class="button-section flex-space-around">
-						<img
-							src="./assets/icons/bar.svg"
-							alt="bar"
-							class="see-results-image"
-						/>
-						<p class="see-results">See Results</p>
-					</div>
-				</div>
+				<div class="icon-wrapper next" id="next-icon">
+					<i class="fa fa-chevron-right icon"></i>
+				</div> -->
+    </header>
 
-				<div class="section-wrapper">
-					<div class="ingredients-section">
-						<ul class="ingredients-section-cards">
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="almond"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Almond.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="chashew"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Chashew.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="coconut"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Coconut.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="flax"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Flax.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="hazelnut"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Hazelnut.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="hemp"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Hemp.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="oat"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Oat.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="pea"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Pea.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="quinoa"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Quinoa.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="rice"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Rice.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="soy"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Soy.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-							<li
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ondrop="onDrop(event)"
-								class="ingredients-section-card"
-							>
-								<img
-									draggable="true"
-									id="walnut"
-									ondragstart="onDragStart(event)"
-									ontouchstart="onDragStart(event)"
-									src="./assets//images/Coming Soon/Walnut.png"
-									alt=""
-									class="ingredients-section-card__image"
-								/>
-							</li>
-						</ul>
-					</div>
-					<div class="rank-section">
-						<div class="rank-cards">
-							<div
-								id="dropzone-1"
-								class="rank-card"
-								ondrop="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-							>
-								<p class="rank-card-text">Rank 1</p>
-							</div>
-							<div
-								id="dropzone-2"
-								class="rank-card"
-								ondrop="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-							>
-								<p class="rank-card-text">Rank 2</p>
-							</div>
-							<div
-								id="dropzone-3"
-								class="rank-card"
-								ondrop="onDrop(event)"
-								ondragover="onDragOver(event)"
-								ontouchmove="onDragOver(event)"
-								ontouchend="onDrop(event)"
-							>
-								<p class="rank-card-text">Rank 3</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="result-and-form-wrapper hidden" id="result-and-form-wrapper">
-			<div class="container">
-				<div class="shop__icon">
-					<img src="./assets/icons/header-img.png" alt="stylish icon" />
-				</div>
-				<h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
+    <section class="quiz" id="quiz">
+      <div class="container">
+        <div class="shop__icon">
+          <img src="./assets/icons/header-img.png" alt="stylish icon" />
+        </div>
+        <h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
+        <div class="subtitle-rank-button-wrap">
+          <h3 class="ingredients-section-heading">
+            Drag Ingredient to the preferred rank
+          </h3>
+          <div id="quiz-button" class="button-section flex-space-around">
+            <img
+              src="./assets/icons/bar.svg"
+              alt="bar"
+              class="see-results-image"
+            />
+            <p class="see-results">See Results</p>
+          </div>
+        </div>
 
-				<div class="subtitle-rank-button-wrap">
-					<form action="" class="form" id="form-info">
-						<input
-							type="text"
-							name=""
-							id="nameField"
-							class="name-field"
-							placeholder="Enter your full name"
-						/>
-						<input
-							type="email"
-							name=""
-							id="emailField"
-							class="email-field"
-							placeholder="Enter your email"
-						/>
-						<button class="submit-button" type="submit">Submit</button>
-					</form>
-					<h3 class="form-title hidden" id="submission-response"></h3>
-					<div class="back-to-quiz-button" id="back-to-quiz-button">
-						<img
-							class="back-to-quiz-img"
-							src="./assets/icons/bar.svg"
-							alt="bar"
-						/>
-						<span class="back-to-quiz-text">Back to Quiz</span>
-					</div>
-				</div>
+        <div class="section-wrapper">
+          <div class="ingredients-section">
+            <ul class="ingredients-section-cards">
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="almond"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Almond.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="chashew"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Chashew.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="coconut"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Coconut.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="flax"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Flax.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="hazelnut"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Hazelnut.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="hemp"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Hemp.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="oat"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets/images/Coming Soon/Oat.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="pea"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets/images/Coming Soon/Pea.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="quinoa"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Quinoa.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="rice"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Rice.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="soy"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Soy.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+              <li class="ingredients-section-card">
+                <img
+                  draggable="true"
+                  id="walnut"
+                  ondragstart="onDragStart(event)"
+                  ontouchstart="onDragStart(event)"
+                  src="./assets//images/Coming Soon/Walnut.png"
+                  alt=""
+                  class="ingredients-section-card__image"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="rank-section">
+            <div class="rank-cards">
+              <div
+                id="dropzone-1"
+                class="rank-card"
+                ondrop="onDrop(event)"
+                ondragover="onDragOver(event)"
+                ontouchmove="onDragOver(event)"
+                ontouchend="onDrop(event)"
+              >
+                <p class="rank-card-text">Rank 1</p>
+              </div>
+              <div
+                id="dropzone-2"
+                class="rank-card"
+                ondrop="onDrop(event)"
+                ondragover="onDragOver(event)"
+                ontouchmove="onDragOver(event)"
+                ontouchend="onDrop(event)"
+              >
+                <p class="rank-card-text">Rank 2</p>
+              </div>
+              <div
+                id="dropzone-3"
+                class="rank-card"
+                ondrop="onDrop(event)"
+                ondragover="onDragOver(event)"
+                ontouchmove="onDragOver(event)"
+                ontouchend="onDrop(event)"
+              >
+                <p class="rank-card-text">Rank 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="result-and-form-wrapper hidden" id="result-and-form-wrapper">
+      <div class="container">
+        <div class="shop__icon">
+          <img src="./assets/icons/header-img.png" alt="stylish icon" />
+        </div>
+        <h2 class="shop__title">Quiz: Rank your favorite plant-based milks</h2>
 
-				<div class="quiz-result-and-rank-wrapper">
-					<div class="quiz-image-subtitle-wrapper">
-						<div class="quiz-subtitle">
-							Enter drawing to win over $5,000 in products and prizes!
-						</div>
-						<img
-							src="./assets/images/Coming Soon/Screenshot_1.png"
-							alt=""
-							class="quiz-main-image"
-						/>
-					</div>
-					<div class="result-section">
-						<div class="progress-report" id="progress-report">
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+        <div class="subtitle-rank-button-wrap">
+          <form action="" class="form" id="form-info">
+            <input
+              type="text"
+              name=""
+              id="nameField"
+              class="name-field"
+              placeholder="Enter your full name"
+            />
+            <input
+              type="email"
+              name=""
+              id="emailField"
+              class="email-field"
+              placeholder="Enter your email"
+            />
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+          <h3 class="form-title hidden" id="submission-response"></h3>
+          <div class="back-to-quiz-button" id="back-to-quiz-button">
+            <img
+              class="back-to-quiz-img"
+              src="./assets/icons/bar.svg"
+              alt="bar"
+            />
+            <span class="back-to-quiz-text">Back to Quiz</span>
+          </div>
+        </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+        <div class="quiz-result-and-rank-wrapper">
+          <div class="quiz-image-subtitle-wrapper">
+            <div class="quiz-subtitle">
+              Enter drawing to win over $5,000 in products and prizes!
+            </div>
+            <img
+              src="./assets/images/Coming Soon/Screenshot_1.png"
+              alt=""
+              class="quiz-main-image"
+            />
+          </div>
+          <div class="result-section">
+            <div class="progress-report" id="progress-report">
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-							<div>
-								<div class="label-and-score-wrapper flex-space-between">
-									<label
-										for="first-option"
-										class="label-and-score-text"
-									></label>
-									<span class="score"></span>
-								</div>
-								<div class="first-option">
-									<div class="progress-label"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
 
-		<section class="why-plant-milk container">
-			<h2 class="why-plant-milk__title">
-				Why 3D Strainer Plant Milk and Drink Maker?
-			</h2>
-			<h5 class="why-plant-milk__subtitle">
-				What is your current source for plant milk?
-			</h5>
-			<div class="why-plant-milk__buttons">
-				<button
-					class="why-plant-milk__button why-plant-milk__button--primary"
-					id="store"
-				>
-					I Buy in Store
-				</button>
-				<button
-					class="why-plant-milk__button why-plant-milk__button--secondary"
-					id="home"
-				>
-					I Make at Home
-				</button>
-			</div>
-			<div class="store-section" id="store-section">
-				<p class="why-plant-milk__excerpt">
-					Retail store plant milk varieties have clear environmental and
-					humanitarian<br />
-					advantages over cows milk. Besides from being more costly,
-					unfortunately<br />
-					commercialization introduces a host of additives we can do without.
-				</p>
-				<div class="why-plant-milk__images-wrapper">
-					<img
-						src="./assets/images/Homepage/I Buy in Store.png"
-						alt=""
-						class="why-plant-milk__image"
-					/>
-				</div>
-				<ul class="why-plant-milk__our-speciality-items flex-space-evenly">
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Emulsifiers
-						</span>
-					</li>
+              <div>
+                <div class="label-and-score-wrapper flex-space-between">
+                  <label
+                    for="first-option"
+                    class="label-and-score-text"
+                  ></label>
+                  <span class="score"></span>
+                </div>
+                <div class="first-option">
+                  <div class="progress-label"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Thickeners.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Thickeners
-						</span>
-					</li>
+    <section class="why-plant-milk container">
+      <h2 class="why-plant-milk__title">
+        Why 3D Strainer Plant Milk and Drink Maker?
+      </h2>
+      <h5 class="why-plant-milk__subtitle">
+        What is your current source for plant milk?
+      </h5>
+      <div class="why-plant-milk__buttons">
+        <button
+          class="why-plant-milk__button why-plant-milk__button--primary"
+          id="store"
+        >
+          I Buy in Store
+        </button>
+        <button
+          class="why-plant-milk__button why-plant-milk__button--secondary"
+          id="home"
+        >
+          I Make at Home
+        </button>
+      </div>
+      <div class="store-section" id="store-section">
+        <p class="why-plant-milk__excerpt">
+          Retail store plant milk varieties have clear environmental and
+          humanitarian<br />
+          advantages over cows milk. Besides from being more costly,
+          unfortunately<br />
+          commercialization introduces a host of additives we can do without.
+        </p>
+        <div class="why-plant-milk__images-wrapper">
+          <img
+            src="./assets/images/Homepage/I Buy in Store.png"
+            alt=""
+            class="why-plant-milk__image"
+          />
+        </div>
+        <ul class="why-plant-milk__our-speciality-items flex-space-evenly">
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Emulsifiers
+            </span>
+          </li>
+		   	
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Thickeners.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Thickeners
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Synthetic_Vitamins.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Synthetic Vitamins
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Synthetic_Vitamins.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Synthetic Vitamins
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Stabilizers.svg"
-							alt=""
-						/>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Stabilizers.svg"
+              alt=""
+            />
 
-						<span class="why-plant-milk__our-speciality-text">
-							Stabilizers
-						</span>
-					</li>
+            <span class="why-plant-milk__our-speciality-text">
+              Stabilizers
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Lab Flavors.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Lab Flavors
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Lab Flavors.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Lab Flavors
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Preservatives.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Preservatives
-						</span>
-					</li>
-				</ul>
-			</div>
-			<div class="home-section hidden" id="home-section">
-				<p class="why-plant-milk__excerpt">
-					Making homemade plant milks with nut bags or cheese cloth offer less
-					than<br />
-					optimal experience and results. The 3D Strainer is significantly
-					faster and most<br />
-					effective in extracting milk from ingredient's pulp.
-				</p>
-				<div class="why-plant-milk__images-wrapper">
-					<img
-						src="./assets/images/Coming Soon/nutbag.png"
-						alt=""
-						class="why-plant-milk__image"
-					/>
-				</div>
-				<ul class="why-plant-milk__our-speciality-items flex-space-evenly">
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Messy Milking
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Preservatives.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Preservatives
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="home-section hidden" id="home-section">
+        <p class="why-plant-milk__excerpt">
+          Making homemade plant milks with nut bags or cheese cloth offer less
+          than<br />
+          optimal experience and results. The 3D Strainer is significantly
+          faster and most<br />
+          effective in extracting milk from ingredient's pulp.
+        </p>
+        <div class="why-plant-milk__images-wrapper">
+          <img
+            src="./assets/images/Coming Soon/nutbag.png"
+            alt=""
+            class="why-plant-milk__image"
+          />
+        </div>
+        <ul class="why-plant-milk__our-speciality-items flex-space-evenly">
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Emulsifiers.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Messy Milking
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Thickeners.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Messy Cleanup
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Thickeners.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Messy Cleanup
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Synthetic_Vitamins.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Inferior Straining
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Synthetic_Vitamins.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Inferior Straining
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Stabilizers.svg"
-							alt=""
-						/>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Stabilizers.svg"
+              alt=""
+            />
 
-						<span class="why-plant-milk__our-speciality-text">
-							Contamination
-						</span>
-					</li>
+            <span class="why-plant-milk__our-speciality-text">
+              Contamination
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Lab Flavors.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Limited Lifetime
-						</span>
-					</li>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Lab Flavors.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Limited Lifetime
+            </span>
+          </li>
 
-					<li class="why-plant-milk__our-speciality-item">
-						<img
-							class="why-plant-milk__our-speciality-image"
-							src="./assets/images/Homepage/I buy in store/Preservatives.svg"
-							alt=""
-						/>
-						<span class="why-plant-milk__our-speciality-text">
-							Limited Use Cases
-						</span>
-					</li>
-				</ul>
-			</div>
-		</section>
+          <li class="why-plant-milk__our-speciality-item">
+            <img
+              class="why-plant-milk__our-speciality-image"
+              src="./assets/images/Homepage/I buy in store/Preservatives.svg"
+              alt=""
+            />
+            <span class="why-plant-milk__our-speciality-text">
+              Limited Use Cases
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-		<section class="shop">
-			<div class="container">
-				<div class="shop__icon">
-					<img src="./assets/icons/header-img.png" alt="stylish icon" />
-				</div>
-				<h2 class="shop__title">Get More Out of Your Milk Making</h2>
-				<section class="shop__card flex-space-evenly shop-flex-wrapper-1">
-					<img
-						src="./assets/images/Homepage/Shop Ingredients.svg"
-						alt=""
-						class="shop__card-image"
-					/>
+    <section class="shop">
+      <div class="container">
+        <div class="shop__icon">
+          <img src="./assets/icons/header-img.png" alt="stylish icon" />
+        </div>
+        <h2 class="shop__title">Get More Out of Your Milk Making</h2>
+        <section class="shop__card flex-space-evenly shop-flex-wrapper-1">
+          <img
+            src="./assets/images/Homepage/Shop Ingredients.svg"
+            alt=""
+            class="shop__card-image"
+          />
 
-					<section class="shop__card-details">
-						<h2 class="shop__card-title">Shop Ingredients</h2>
-						<p class="shop__card-desc">
-							We will offer twelve organic milk making<br />
-							ingredients. Choose portioned pods or bulk<br />
-							compostable packaging. The freshest ingredients<br />
-							shipped on demand or subscription.
-						</p>
-						<!-- <button class="shop-now__button">shop now</button> -->
-					</section>
-				</section>
+          <section class="shop__card-details">
+            <h2 class="shop__card-title">Shop Ingredients</h2>
+            <p class="shop__card-desc">
+              We will offer twelve organic milk making<br />
+              ingredients. Choose portioned pods or bulk<br />
+              compostable packaging. The freshest ingredients<br />
+              shipped on demand or subscription.
+            </p>
+            <!-- <button class="shop-now__button">shop now</button> -->
+          </section>
+        </section>
 
-				<section class="shop__card flex-space-evenly shop-flex-wrapper-2">
-					<section class="shop__card-details">
-						<h2 class="shop__card-title">Shop Bottles</h2>
-						<p class="shop__card-desc">
-							Our premium branded bottles keep your<br />
-							homemade-DIY milk fresh and tastier longer.<br />
-							They can be washed, reused endlessly and<br />
-							even recycled.
-						</p>
-						<!-- <button class="shop-now__button">shop now</button> -->
-					</section>
+        <section class="shop__card flex-space-evenly shop-flex-wrapper-2">
+          <section class="shop__card-details">
+            <h2 class="shop__card-title">Shop Bottles</h2>
+            <p class="shop__card-desc">
+              Our premium branded bottles keep your<br />
+              homemade-DIY milk fresh and tastier longer.<br />
+              They can be washed, reused endlessly and<br />
+              even recycled.
+            </p>
+            <!-- <button class="shop-now__button">shop now</button> -->
+          </section>
 
-					<img
-						src="./assets/images/Homepage/Shop Bottles.png"
-						alt=""
-						class="shop__card-image"
-					/>
-				</section>
-			</div>
-		</section>
+          <img
+            src="./assets/images/Homepage/Shop Bottles.png"
+            alt=""
+            class="shop__card-image"
+          />
+        </section>
+      </div>
+    </section>
 
-		<footer class="footer">
-			<div class="container footer__elements">
-				<section class="footer__logo-decs">
-					<img src="./assets/images/logo.svg" alt="" class="footer__logo" />
-				</section>
+    <footer class="footer">
+      <div class="container footer__elements">
+        <section class="footer__logo-decs">
+          <img src="./assets/images/logo.svg" alt="" class="footer__logo" />
+        </section>
 
-				<section class="footer__social-links">
-					<h2 class="footer__social-links-title">join us</h2>
-					<img
-						src="./assets/images/Homepage/wave_separator.svg"
-						alt="icon"
-						class="footer__social-links-icon"
-					/>
-					<ul class="footer__social-link-items flex-space-between">
-						<li class="footer__social-link-item">
-							<a
-								target="_blank"
-								href="https://facebook.com/plantmilkmakers"
-								class="footer__social-link"
-							>
-								<img src="./assets/icons/fb.svg" alt="facebook" />
-							</a>
-						</li>
-						<li class="footer__social-link-item">
-							<a
-								target="_blank"
-								href="https://youtube.com/plantmilkmakers"
-								class="footer__social-link"
-							>
-								<img src="./assets/icons/yt.svg" alt="youtube" />
-							</a>
-						</li>
-						<li class="footer__social-link-item">
-							<a
-								target="_blank"
-								href="https://pinterest.com/plantmilkmakers"
-								class="footer__social-link"
-							>
-								<img src="./assets/icons/pin.svg" alt="pinterest" />
-							</a>
-						</li>
-						<li class="footer__social-link-item">
-							<a
-								target="_blank"
-								href="https://twitter.com/plantmilkmakers"
-								class="footer__social-link"
-							>
-								<img src="./assets/icons/twitter.svg" alt="twitter" />
-							</a>
-						</li>
-						<li class="footer__social-link-item">
-							<a
-								target="_blank"
-								href="https://instagram.com/plantmilkmakers"
-								class="footer__social-link"
-							>
-								<img src="./assets/icons/instagram.svg" alt="" />
-							</a>
-						</li>
-					</ul>
-					<!-- <div class="footer__social-moto">
+        <section class="footer__social-links">
+          <h2 class="footer__social-links-title">join us</h2>
+          <img
+            src="./assets/images/Homepage/wave_separator.svg"
+            alt="icon"
+            class="footer__social-links-icon"
+          />
+          <ul class="footer__social-link-items flex-space-between">
+            <li class="footer__social-link-item">
+              <a
+                target="_blank"
+                href="https://facebook.com/plantmilkmakers"
+                class="footer__social-link"
+              >
+                <img src="./assets/icons/fb.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a
+                target="_blank"
+                href="https://youtube.com/plantmilkmakers"
+                class="footer__social-link"
+              >
+                <img src="./assets/icons/yt.svg" alt="youtube" />
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a
+                target="_blank"
+                href="https://pinterest.com/plantmilkmakers"
+                class="footer__social-link"
+              >
+                <img src="./assets/icons/pin.svg" alt="pinterest" />
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a
+                target="_blank"
+                href="https://twitter.com/plantmilkmakers"
+                class="footer__social-link"
+              >
+                <img src="./assets/icons/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li class="footer__social-link-item">
+              <a
+                target="_blank"
+                href="https://instagram.com/plantmilkmakers"
+                class="footer__social-link"
+              >
+                <img src="./assets/icons/instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <!-- <div class="footer__social-moto">
 						Our community is growing. Join us!
 					</div> -->
-				</section>
-			</div>
+        </section>
+      </div>
 
-			<section class="secondary-footer container">
-				<button class="secondary-footer__button">Become a Partner</button>
-				<span class="secondary-footer__copy-right-text">
-					Copyright © 2021 Plant Milk Maker
-				</span>
-				<p class="secondary-footer__moto">
-					Find out about of affiliate and reseller opportunities
-				</p>
-			</section>
-		</footer>
-		<script src="./js/app.js"></script>
-	</body>
+      <section class="secondary-footer container">
+        <button class="secondary-footer__button">Become a Partner</button>
+        <span class="secondary-footer__copy-right-text">
+          Copyright © 2021 Plant Milk Maker
+        </span>
+        <p class="secondary-footer__moto">
+          Find out about of affiliate and reseller opportunities
+        </p>
+      </section>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

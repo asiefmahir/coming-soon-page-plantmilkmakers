@@ -45,8 +45,8 @@ const nextHandler = () => {
     console.log(clickCount)
 }
 
-prevIcon.addEventListener('click', prevHandler)
-nextIcon.addEventListener('click', nextHandler)
+// prevIcon.addEventListener('click', prevHandler)
+// nextIcon.addEventListener('click', nextHandler)
 
 // Hero Section Ends
 
@@ -70,6 +70,9 @@ const heroEmail = document.getElementById('hero-email');
 const heroSubmit = document.getElementById('hero-submit')
 
 const progressReport = document.getElementById('progress-report');
+
+let draggableItem = null;
+let draggableItemParent = null;
 
 homeButton.addEventListener('click', () => {
     homeSection.classList.remove('hidden');
@@ -160,28 +163,31 @@ quizButton.addEventListener('click', quizHandler)
 function onDragStart(event) {
     // event.prototype
     console.log(event.dataTransfer)
+    event.target.parentElement.style.transform = ''
     // event.originalEvent.dataTransfer.setData("text/plain", event.target.id);
     // console.log(event.target)
     event.dataTransfer.setData('text/plain', event.target.id);
+   if(event.target.parentElement.nodeName === 'LI') {
+    draggableItem = event.target;
+    draggableItemParent = event.target.parentElement;
+   }
+    console.log(draggableItemParent);
 }
+
+
 
 function onDragOver(event) {
+    // console.log(event.target);
+    // console.log('Hllo');
+    // event.target.style.transform = 'scale(1.5)'
+    // event.target.style.border = '1px solid #80c627'
+    // event.target.style.borderRadius = '5px'
+    
     event.preventDefault();
+
 }
 
-function onDrop(event) {
-    const dropzone = event.target;
-    if (dropzone.nodeName === 'DIV' || dropzone.nodeName === 'LI') {
-        const id = event.dataTransfer.getData('text/plain');
-        const draggableElement = document.getElementById(id);
-        draggableElement.style.minHeight = '100%'
-        draggableElement.style.minWidth = '100%'
-        console.log(draggableElement)
-        if (draggableElement.parentElement.nodeName === 'LI') {
-            draggableElement.parentElement.style.border = '1px solid #80c627'
-            draggableElement.parentElement.style.borderRadius = '5px'
-        }
-        if (draggableElement.parentElement.nodeName === 'DIV') {
+function creatingParagraphDomNodes () {
             let children1 = document.createElement('p')
             children1.classList.add('rank-card-text')
             let textForChildren1 = document.createTextNode('Rank 1')
@@ -195,20 +201,37 @@ function onDrop(event) {
             children3.classList.add('rank-card-text')
 
             let textForChildren3 = document.createTextNode('Rank 3')
-            children3.appendChild(textForChildren3)
+            children3.appendChild(textForChildren3);
+            return {children1, children2, children3}
+}
 
-            if (draggableElement.parentElement.getAttribute('id') === 'dropzone-1') {
-                draggableElement.parentElement.appendChild(children1)
-            } else if (draggableElement.parentElement.getAttribute('id') === 'dropzone-2') {
-                draggableElement.parentElement.appendChild(children2)
-            } else if (draggableElement.parentElement.getAttribute('id') === 'dropzone-3') {
-                draggableElement.parentElement.appendChild(children3)
+function onDrop(event) {
+    const dropzone = event.target;
+    if (dropzone.nodeName === 'DIV') {
+        const id = event.dataTransfer.getData('text/plain');
+        const draggableElement = document.getElementById(id);
+        draggableElement.style.minHeight = '100%'
+        draggableElement.style.minWidth = '100%'
+        console.log(draggableElement)
+        // if (draggableElement.parentElement.nodeName === 'LI') {
+        //     draggableElement.parentElement.style.border = '1px solid #80c627'
+        //     draggableElement.parentElement.style.borderRadius = '5px'
+        // }
+        // if (draggableElement.parentElement.nodeName === 'DIV') {
+        //     let {children1, children2, children3} = creatingParagraphDomNodes()
 
-            }
-        }
+        //     if (draggableElement.parentElement.getAttribute('id') === 'dropzone-1') {
+        //         draggableElement.parentElement.appendChild(children1)
+        //     } else if (draggableElement.parentElement.getAttribute('id') === 'dropzone-2') {
+        //         draggableElement.parentElement.appendChild(children2)
+        //     } else if (draggableElement.parentElement.getAttribute('id') === 'dropzone-3') {
+        //         draggableElement.parentElement.appendChild(children3)
+
+        //     }
+        // }
 
         console.log('dropzoen', dropzone)
-        let child = dropzone.lastElementChild;
+        const child = dropzone.getElementsByClassName('rank-card-text')[0]
         console.log(child)
 
         if (dropzone.nodeName === 'IMG') {
@@ -219,28 +242,59 @@ function onDrop(event) {
             alert('An Ingredient is already present here');
             return
         } else if (child && child.nodeName === 'P') {
+            console.log(child);
             dropzone.removeChild(child)
+            console.log(dropzone);
             dropzone.appendChild(draggableElement);
-            if (dropzone.nodeName === 'LI') {
-                dropzone.style.border = 'none'
-                dropzone.style.borderRadius = '0'
-            }
+            // console.log(dropzone);
+            dropzone.style.transform = 'scale(1)';
+            event.target.style.border = '1px dashed #80c627'
+            event.target.style.borderRadius = '5px'
+            // if (dropzone.nodeName === 'LI') {
+            //     dropzone.style.border = 'none'
+            //     dropzone.style.borderRadius = '0'
+            // }
             event
                 .dataTransfer
                 .clearData()
         }
-        if (!child) {
-            dropzone.appendChild(draggableElement);
-            if (dropzone.nodeName === 'LI') {
-                dropzone.style.border = 'none'
-                dropzone.style.borderRadius = '0'
-            }
-            event
-                .dataTransfer
-                .clearData()
-        }
+        // if (!child) {
+        //     console.log(child);
+        //     dropzone.appendChild(draggableElement);
+        //     dropzone.style.transform = 'scale(1)';
+        //     event.target.style.border = '1px solid #80c627'
+        //     event.target.style.borderRadius = '5px'
+        //     if (dropzone.nodeName === 'LI') {
+        //         dropzone.style.border = 'none'
+        //         dropzone.style.borderRadius = '0'
+        //     }
+        //     event
+        //         .dataTransfer
+        //         .clearData()
+        // }
     }
 }
+
+[dropZone1, dropZone2, dropZone3].forEach((element) => {
+    element.addEventListener('dragleave', () => {
+        let {children1, children2, children3} = creatingParagraphDomNodes()
+        if(element.lastElementChild?.nodeName !== 'P') {
+            console.log(element.lastElementChild);
+            if(element.getAttribute('id') === 'dropzone-1' ) {
+                element.appendChild(children1)
+            } else if(element.getAttribute('id') === 'dropzone-2' ) {
+                element.appendChild(children2)
+            } else if(element.getAttribute('id') === 'dropzone-3' ) {
+                element.appendChild(children3)
+            }
+        }
+
+        draggableItemParent.appendChild(draggableItem);
+        element.style.transform = 'scale(1)';
+        element.style.border = '1px dashed #80c627';
+        
+    })
+})
 
 document.getElementById('subscribe-form').addEventListener('submit', function (e) {
 
