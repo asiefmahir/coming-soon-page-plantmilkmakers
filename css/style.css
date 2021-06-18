@@ -201,7 +201,7 @@ li {
 }
 .coming-soon {
 	color: #5fa208;
-	font-size: 8rem;
+	font-size: 5.2rem;
 	font-weight: 700;
 	margin-bottom: 7rem;
 }
@@ -838,38 +838,8 @@ li {
 .d-none {
 	display: none;
 }
-/*utility*/
 
-.container {
-	width: 80%;
-	margin: auto;
-	margin-top: 3rem;
-}
 
-.flex-space-between {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.flex-space-around {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.flex-space-evenly {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.d-block {
-	display: block;
-}
-
-.d-none {
-	display: none;
-}
 .hidden {
 	display: none;
 }
