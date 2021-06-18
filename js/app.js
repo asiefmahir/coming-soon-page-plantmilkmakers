@@ -334,7 +334,7 @@ function onDrop(event) {
         // draggableItemParent.style.border = ''
         draggableItemParent.appendChild(draggableItem);
         element.style.transform = 'scale(1)';
-        element.style.border = '1px dashed #80c627';
+        element.style.border = '2px dashed #80c627';
         
     })
 })

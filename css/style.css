@@ -359,6 +359,9 @@ li {
 	display: flex;
 	justify-content: space-between;
 }
+.ingredients-section{
+	
+}
 .subtitle-rank-button-wrap {
 	margin-top: 6rem;
 }
@@ -368,18 +371,6 @@ li {
 	word-break: break-all;
 }
 
-.button-section {
-	border: none;
-	outline: none;
-	background-color: var(--primary-color);
-	color: var(--white-color);
-	padding: 1rem 2rem;
-	border-radius: var(--primary-border-radius);
-	font-size: 1.6rem;
-	cursor: pointer;
-	width: 14%;
-	margin-left: 65rem;	
-}
 
 .ingredients-section {
 	flex-basis: 65%;
@@ -403,14 +394,26 @@ li {
 
 
 .rank-section {
-	flex-basis: 20%;
+	flex-basis: 13%;
 }
 
 .rank-cards {
-	margin-top: 7rem;
-	height: 100%;
-	width: 100%;
+	width:100%;
+	height:100%;
 }
+
+.button-section {
+	border: none;
+	outline: none;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	padding: 1rem 2rem;
+	border-radius: var(--primary-border-radius);
+	font-size: 1.6rem;
+	cursor: pointer;
+} 
+
+
 .rank-card {
 	padding: 2rem 2rem;
 	border: 2px dashed var(--primary-color);
@@ -421,6 +424,9 @@ li {
 	color: var(--primary-color);
 	opacity: 0.6;
 	position: relative;
+	text-align: center;
+	width:100%;
+	height:25%;
 }
 .rank-card-text {
 	position: absolute;
@@ -692,6 +698,7 @@ li {
 .form {
 	display: flex;
 	align-items: center;
+	margin-top:-1rem;
 }
 
 .name-field {
@@ -731,6 +738,12 @@ li {
 	outline: none;
 	font-size: 1.6rem;
 	font-weight: 600;
+	cursor:pointer;
+}
+
+.result-section-wrapper	{
+	text-align:center;
+	flex-basis:20%;
 }
 
 .back-to-quiz-button {
@@ -739,9 +752,11 @@ li {
 	padding: 1.5rem 2rem;
 	color: white;
 	border-radius: 0.5rem;
-	margin-left: 14rem;
 	display: flex;
 	align-items: center;
+	width:60%;
+	margin:auto;
+	cursor:pointer;
 }
 
 .back-to-quiz-img {
@@ -754,25 +769,32 @@ li {
 .quiz-result-and-rank-wrapper {
 	margin-top: 2.5rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .quiz-subtitle {
 	text-align: center;
+	margin-top:2rem;
+	color:black;
 }
 
 .progress-report {
 	display: flex;
 	flex-direction: column;
 }
+
 .result-section {
 	border: 1px solid #ececec;
-	width: 25%;
+	width: 100%;
 	background: #fbfbfb;
 	padding: 2rem;
-	border-radius: 2.5rem;
+	border-radius: 1.5rem;
 	box-shadow: 0 0 1rem 1rem #ececec3a;
+	margin-top:5rem;
 }
+
+
+
 .label-and-score-wrapper {
 	margin-top: 1.5rem;
 }
@@ -804,6 +826,7 @@ li {
 
 .quiz-image-subtitle-wrapper {
 	text-align: center;
+	flex-basis: 65%;
 }
 /*progress label nth child styled start from here*/
 
