@@ -1,4 +1,9 @@
 /*hero section*/
+@media (max-width: 768px) {
+	.submit-button {
+		border-radius: 0.5rem;
+	}
+}
 @media (max-width: 1440px) {
 	.hero__image {
 		width: 70rem;
@@ -152,8 +157,11 @@
 
 
 @media (max-width: 950px) {
+	.hero__image-wrapper {
+		text-align: center;
+	}
 	.hero__image {
-		width: 45rem;
+		width: 100%;
 	}
 }
 

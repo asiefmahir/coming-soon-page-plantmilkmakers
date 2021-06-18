@@ -189,6 +189,7 @@ li {
 
 .hero__image-wrapper {
 	width: 50%;
+	text-align: center	;
 }
 
 .hero__image {
@@ -248,7 +249,9 @@ li {
 	padding: 1.2rem 4rem;
 	color: #ffffff;
 	background-color: var(--primary-color);
-	border-radius: 0rem 0.5rem 0.5rem 0rem;
+	/* border-radius: 0rem 0.5rem 0.5rem 0rem; */
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 	border: none;
 	outline: none;
 	font-size: 1.3rem;
@@ -722,7 +725,8 @@ li {
 	padding: 1.3rem 6rem;
 	color: #ffffff;
 	background-color: var(--primary-color);
-	border-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 	border: none;
 	outline: none;
 	font-size: 1.6rem;

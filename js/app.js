@@ -158,19 +158,50 @@ const quizHandler = () => {
         .catch(e => console.log(e.message))
 }
 
-quizButton.addEventListener('click', quizHandler)
+quizButton.addEventListener('click', quizHandler);
+// function onDragStart(event) {
+//     event.preventDefault()
+//     draggableItem = event.target;
+//     if(event.target.parentElement.nodeName === 'LI') {
+//         draggableItemParent = event.target.parentElement;
+//     }
+//     console.log(draggableItemParent);
+// }
+// function onDragOver (e) {
+//     e.preventDefault();
+//     console.log(e.target);
+// }
+
+// function onDrop (e) {
+//     e.preventDefault();
+//     let dropzone = e.target;
+
+//     if(dropzone.nodeName === 'DIV') {
+//         let draggableElement = draggableItem
+//         let child = dropzone.lastElementChild;
+
+//         if(child.nodeName !== 'IMG') {
+//             dropzone.removeChild(child)
+//             dropzone.appendChild(draggableElement);
+             
+//         }
+
+//     }
+    
+// }
+
 
 function onDragStart(event) {
     // event.prototype
-    console.log(event.dataTransfer)
-    event.target.parentElement.style.transform = ''
+    // console.log(event.dataTransfer)
+    // event.target.parentElement.style.transform = ''
     // event.originalEvent.dataTransfer.setData("text/plain", event.target.id);
     // console.log(event.target)
-    event.dataTransfer.setData('text/plain', event.target.id);
-   if(event.target.parentElement.nodeName === 'LI') {
+    // event.dataTransfer.setData('text/plain', event.target.id);
     draggableItem = event.target;
-    draggableItemParent = event.target.parentElement;
-   }
+   if(event.target.parentElement.nodeName === 'LI') {
+       draggableItemParent = event.target.parentElement;
+    }
     console.log(draggableItemParent);
 }
 
@@ -224,39 +255,39 @@ function creatingParagraphDomNodes () {
 
 function onDrop(event) {
     const dropzone = event.target;
-    if (dropzone.nodeName === 'DIV' && Array.from(dropzone.getElementsByTagName('IMG')).length > 0) {
-        const id = event.dataTransfer.getData('text/plain');
-        const draggableElement = document.getElementById(id);
-        draggableElement.style.minHeight = '100%'
-        draggableElement.style.minWidth = '100%'
+    if (dropzone.nodeName === 'DIV') {
+        // const id = event.dataTransfer.getData('text/plain');
+        // const draggableElement = document.getElementById(id);
+        let draggableElement = draggableItem;
+        // draggableElement.style.minHeight = '100%'
+        // draggableElement.style.minWidth = '100%'
         console.log(draggableElement)
         
 
         console.log('dropzoen', dropzone)
-        const child = dropzone.getElementsByClassName('rank-card-text')[0]
+        const child = dropzone.lastElementChild
+        console.log(dropzone.childNodes);
         console.log(child)
 
-        if (dropzone.nodeName === 'IMG') {
-            alert('An Ingredient is already present here');
-            return
-        }
         console.log(dropzone.getElementsByTagName('IMG'));
-            // if( ) {
-            //     alert('An Ingredient is already present here');
-            //     return
-            // }
         if (child && child.nodeName === 'IMG') {
             alert('An Ingredient is already present here');
             return
         } else if (child && child.nodeName === 'P') {
             console.log(child);
             dropzone.removeChild(child)
+      
+            console.log(dropzone.childNodes);
+        
             console.log(dropzone);
             dropzone.appendChild(draggableElement);
+            draggableItem =  null;
             // console.log(dropzone);
             dropzone.style.transform = 'scale(1)';
             event.target.style.border = '1px dashed #80c627'
             event.target.style.borderRadius = '5px'
+            draggableItemParent.style.border = '1px solid #80c627'
+            draggableItemParent.style.borderRadius = '5px'
             // if (dropzone.nodeName === 'LI') {
             //     dropzone.style.border = 'none'
             //     dropzone.style.borderRadius = '0'
@@ -268,6 +299,7 @@ function onDrop(event) {
         if (!child) {
             console.log(child);
             dropzone.appendChild(draggableElement);
+            draggableItem =  null;
             dropzone.style.transform = 'scale(1)';
             event.target.style.border = '1px solid #80c627'
             event.target.style.borderRadius = '5px'
@@ -284,8 +316,9 @@ function onDrop(event) {
 
 [dropZone1, dropZone2, dropZone3].forEach((element) => {
     element.addEventListener('dragleave', () => {
+        console.log(element);
         let {children1, children2, children3} = creatingParagraphDomNodes()
-        if(!element.lastElementChild || element.lastElementChild?.nodeName !== 'P') {
+        if(element.childNodes.length < 1) {
             console.log(element.lastElementChild);
             if(element.getAttribute('id') === 'dropzone-1' ) {
                 element.appendChild(children1)
@@ -297,7 +330,8 @@ function onDrop(event) {
         }
         console.log(draggableItemParent);
         console.log(draggableItem);
-
+        // console.log(draggableItemParent);
+        // draggableItemParent.style.border = ''
         draggableItemParent.appendChild(draggableItem);
         element.style.transform = 'scale(1)';
         element.style.border = '1px dashed #80c627';
