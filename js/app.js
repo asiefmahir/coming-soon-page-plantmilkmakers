@@ -293,11 +293,14 @@ function onDragStart(event) {
 function onDragOver(event) {
     // console.log(event.target);
     // console.log('Hllo');
-    // event.target.style.transform = 'scale(1.5)'
-    // event.target.style.border = '1px solid #80c627'
-    // event.target.style.borderRadius = '5px'
+    
     
     event.preventDefault();
+    if(event.target.nodeName === 'DIV') {
+        event.target.style.transform = 'scale(1.2)'
+        event.target.style.border = '2px solid #80c627'
+        event.target.style.borderRadius = '5px'
+    }
 
 }
 
@@ -372,6 +375,7 @@ function onDrop(event) {
             event.target.style.borderRadius = '5px'
             draggableItemParent.style.border = '1px solid #80c627'
             draggableItemParent.style.borderRadius = '5px'
+            console.log(draggableItemParent);
             // if (dropzone.nodeName === 'LI') {
             //     dropzone.style.border = 'none'
             //     dropzone.style.borderRadius = '0'
@@ -386,12 +390,15 @@ function onDrop(event) {
             // draggableItem =  null;
             // draggableItemParent = null;
             dropzone.style.transform = 'scale(1)';
-            event.target.style.border = '2px solid #80c627'
-            event.target.style.borderRadius = '5px'
-            if (dropzone.nodeName === 'LI') {
-                dropzone.style.border = 'none'
-                dropzone.style.borderRadius = '0'
-            }
+            dropzone.style.border = '2px dashed #80c627'
+            dropzone.style.borderRadius = '5px'
+            draggableItemParent.style.border = '1px solid #80c627'
+            draggableItemParent.style.borderRadius = '5px'
+            console.log(draggableItemParent);
+            // if (dropzone.nodeName === 'LI') {
+            //     dropzone.style.border = 'none'
+            //     dropzone.style.borderRadius = '0'
+            // }
             event
                 .dataTransfer
                 .clearData()
@@ -401,9 +408,10 @@ function onDrop(event) {
 
 [dropZone1, dropZone2, dropZone3].forEach((element) => {
     element.addEventListener('dragleave', () => {
-        console.log(element);
+        console.log(element.getElementsByTagName('IMG'));
         let {children1, children2, children3} = creatingParagraphDomNodes()
-        if(element.childNodes.length < 1) {
+        // console.log(element.contains('P'));
+        if(element.getElementsByTagName('IMG').length === 0  && element.getElementsByTagName('P').length === 0) {
             console.log(element.lastElementChild);
             if(element.getAttribute('id') === 'dropzone-1' ) {
                 element.appendChild(children1)
