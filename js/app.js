@@ -101,6 +101,43 @@ const child11 = document.getElementById('soy')
 const child12 = document.getElementById('walnut')
 console.log(child1);
 
+// window.addEventListener('load', () => {
+//     if(dropZone1.getElementsByClassName('ingredients-section-card__image').length === 0 && dropZone2.getElementsByClassName('ingredients-section-card__image').length === 0 &&dropZone3.getElementsByClassName('ingredients-section-card__image').length === 0 ) {
+//         console.log('dis');
+//         quizButton.disabled = true; 
+//         let nodes = quizButton.getElementsByTagName('*');
+//         console.log('ewei', nodes);
+//         for(let i = 0; i < nodes.length ; i++) {
+//             nodes[i].disabled =  true;
+//             console.log(nodes[i]);
+//         }
+//     }
+// })
+
+const disableSeeresultsButton = () => {
+    if(dropZone1.getElementsByClassName('ingredients-section-card__image').length === 0 && dropZone2.getElementsByClassName('ingredients-section-card__image').length === 0 &&dropZone3.getElementsByClassName('ingredients-section-card__image').length === 0 ) {
+        console.log('dis');
+        quizButton.disabled = true; 
+        let nodes = quizButton.getElementsByTagName('*');
+        console.log('ewei', nodes);
+        for(let i = 0; i < nodes.length ; i++) {
+            nodes[i].disabled =  true;
+            console.log(nodes[i]);
+        }
+    } else {
+        quizButton.disabled = false;
+        let nodes = quizButton.getElementsByTagName('*');
+        console.log('ewei', nodes);
+        for(let i = 0; i < nodes.length ; i++) {
+            nodes[i].disabled =  true;
+            console.log(nodes[i]);
+        }
+    }
+}
+
+window.addEventListener('load', disableSeeresultsButton)
+// window.addEventListener('change', disableSeeresultsButton )
+
 const parents = [parent1, parent2, parent3, parent4, parent5, parent6, parent7, parent8, parent9, parent10, parent11, parent12];
 
 const parentChilds = [
@@ -179,6 +216,18 @@ storeButton.addEventListener('click', () => {
 
 
 const quizHandler = () => {
+    if(dropZone1.getElementsByClassName('ingredients-section-card__image').length === 0 && dropZone2.getElementsByClassName('ingredients-section-card__image').length === 0 && dropZone3.getElementsByClassName('ingredients-section-card__image').length === 0 ) {
+        console.log('dis');
+        quizButton.disabled = true; 
+        let nodes = quizButton.getElementsByTagName('*');
+        console.log('ewei', nodes);
+        for(let i = 0; i < nodes.length ; i++) {
+            nodes[i].disabled =  true;
+            console.log(nodes[i]);
+        }
+        alert('Please Play The Quiz to See The Results')
+        return
+    }
 
     quizRatings = []
     let firstRankedElement = dropZone1.lastElementChild;
@@ -239,6 +288,8 @@ const quizHandler = () => {
         })
         .catch(e => console.log(e.message))
 }
+
+
 
 quizButton.addEventListener('click', quizHandler);
 // function onDragStart(event) {
@@ -367,6 +418,7 @@ function onDrop(event) {
         
             console.log(dropzone);
             dropzone.appendChild(draggableElement);
+            disableSeeresultsButton()
             // draggableItem =  null;
             // draggableItemParent = null;
             // console.log(dropzone);
@@ -387,6 +439,7 @@ function onDrop(event) {
         if (!child) {
             console.log(child);
             dropzone.appendChild(draggableElement);
+            disableSeeresultsButton()
             // draggableItem =  null;
             // draggableItemParent = null;
             dropzone.style.transform = 'scale(1)';
@@ -408,6 +461,7 @@ function onDrop(event) {
 
 [dropZone1, dropZone2, dropZone3].forEach((element) => {
     element.addEventListener('dragleave', () => {
+        disableSeeresultsButton()
         console.log(element.getElementsByTagName('IMG'));
         let {children1, children2, children3} = creatingParagraphDomNodes()
         // console.log(element.contains('P'));
