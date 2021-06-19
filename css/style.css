@@ -72,111 +72,37 @@ li {
 	width: 100%;
 }
 
-.icon-wrapper {
-	position: absolute;
-	top: 49%;
-	transform: translate(50%);
-	border: 2px dashed var(--primary-color);
-	border-radius: 50%;
-	width: 5rem;
-	height: 5rem;
-	padding: 1.4rem;
-	font-size: 2rem;
-	color: var(--primary-color);
-	transition: 0.4s;
-}
 
-.icon-wrapper:hover {
-	color: white;
-	background: var(--primary-color);
-}
-
-.prev {
-	left: 1rem;
-}
-
-.next {
-	right: 6.5rem;
-}
 
 .nav {
 	background-color: var(--white-color);
 	box-shadow: 0px 10px 20px var(--info-color);
 	padding: 2rem;
-	/* margin-bottom: 2rem; */
+	position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .nav__elements {
-	display: flex;
 	align-items: center;
 }
 
 .logo {
-	display: inherit;
-}
-
-.logo__image {
-	width: 18rem;
-	height: 5rem;
-}
-
-.menu {
-	margin-left: 7rem;
-}
-.menu__item {
-	padding: 0.8rem;
-	margin-left: 1.5rem;
-}
-
-.menu__link {
-	color: var(--secondary-color);
-	font-size: 1.3rem;
-	font-weight: 500;
-	font-family: var(--font-family);
-}
-
-.signin-cart-wrapper {
-	margin-left: 8rem;
-}
-
-.signin-cart-wrapper__cart-icon {
-	border: 2px dashed var(--primary-color);
-	position: relative;
-	padding: 0.2rem 1rem;
-	border-radius: var(--secondary-border-radius);
-	background-color: var(--info-color);
-}
-.signin-cart-wrapper__cart-image {
-	width: 2.5rem;
-}
-
-.signin-cart-wrapper__cart-badge {
-	position: absolute;
-	top: -2.3rem;
-	right: -1.3rem;
-	background-color: var(--primary-color);
-	border-radius: 50%;
-	padding: 0.5rem;
-	color: var(--white-color);
-	width: 3rem;
-	height: 3rem;
 	text-align: center;
 }
 
-.signin-cart-wrapper__sign-in-button {
-	border: none;
-	outline: none;
-	background-color: var(--primary-color);
-	color: var(--white-color);
-	padding: 0.6rem 1rem;
-	margin-left: 2.5rem;
-	border-radius: var(--primary-border-radius);
+.logo__image {
+	width: 100%;
+	height: 5rem;
 }
+
+
 
 .hero {
 	background: linear-gradient(var(--white-color), #81c62748);
 	padding: 2rem 2rem 7rem;
-	margin-top: 3rem;
+	margin-top: 10rem;
 }
 
 .active {
@@ -358,9 +284,6 @@ li {
 .section-wrapper {
 	display: flex;
 	justify-content: space-between;
-}
-.ingredients-section{
-	
 }
 .subtitle-rank-button-wrap {
 	margin-top: 6rem;
@@ -652,9 +575,7 @@ li {
 	width: 95%;
 }
 
-.secondary-footer__copy-right-text {
-	float: right;
-}
+
 .secondary-footer__button {
 	background-color: var(--primary-color);
 	color: var(--white-color);
@@ -671,9 +592,9 @@ li {
 }
 
 .secondary-footer__copy-right-text {
+	float: right;
 	margin-top: 2rem;
 }
-
 /* Quiz Result Section */
 
 .shop__icon {
@@ -753,13 +674,10 @@ li {
 	color: white;
 	border-radius: 0.5rem;
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	width:60%;
 	margin:auto;
 	cursor:pointer;
-}
-
-.back-to-quiz-img {
 }
 
 .back-to-quiz-text {
