@@ -74,6 +74,88 @@ const progressReport = document.getElementById('progress-report');
 let draggableItem = null;
 let draggableItemParent = null;
 
+const parent1 = document.getElementById('parent-1')
+const parent2 = document.getElementById('parent-2')
+const parent3 = document.getElementById('parent-3')
+const parent4 = document.getElementById('parent-4')
+const parent5 = document.getElementById('parent-5')
+const parent6 = document.getElementById('parent-6')
+const parent7 = document.getElementById('parent-7')
+const parent8 = document.getElementById('parent-8')
+const parent9 = document.getElementById('parent-9')
+const parent10 = document.getElementById('parent-10')
+const parent11 = document.getElementById('parent-11')
+const parent12 = document.getElementById('parent-12')
+
+const child1 = document.getElementById('almond')
+const child2 = document.getElementById('chashew')
+const child3 = document.getElementById('coconut')
+const child4 = document.getElementById('flax')
+const child5 = document.getElementById('hazelnut')
+const child6 = document.getElementById('hemp')
+const child7 = document.getElementById('oat')
+const child8 = document.getElementById('pea')
+const child9 = document.getElementById('quinoa')
+const child10 = document.getElementById('rice')
+const child11 = document.getElementById('soy')
+const child12 = document.getElementById('walnut')
+console.log(child1);
+
+const parents = [parent1, parent2, parent3, parent4, parent5, parent6, parent7, parent8, parent9, parent10, parent11, parent12];
+
+const parentChilds = [
+    {
+        parent: parent1,
+        child: child1
+    },
+    {
+        parent: parent2,
+        child: child2
+    },
+    {
+        parent: parent3,
+        child: child3
+    },
+    {
+        parent: parent4,
+        child: child4
+    },
+    {
+        parent: parent5,
+        child: child5
+    },
+    {
+        parent: parent6,
+        child: child6
+    },
+    {
+        parent: parent7,
+        child: child7
+    },
+    {
+        parent: parent8,
+        child: child8
+    },
+    {
+        parent: parent9,
+        child: child9
+    },
+    {
+        parent: parent10,
+        child: child10
+    },
+    {
+        parent: parent11,
+        child: child11
+    },
+    {
+        parent: parent12,
+        child: child12
+    },
+    
+]
+
+
 homeButton.addEventListener('click', () => {
     homeSection.classList.remove('hidden');
     storeSection.classList.add('hidden');
@@ -199,9 +281,10 @@ function onDragStart(event) {
     // console.log(event.target)
     // event.dataTransfer.setData('text/plain', event.target.id);
     draggableItem = event.target;
-   if(event.target.parentElement.nodeName === 'LI') {
-       draggableItemParent = event.target.parentElement;
-    }
+    // if(event.target.parentElement.nodeName === 'LI') {
+    //    draggableItemParent = event.target.parentElement;
+    // }
+    draggableItemParent = parentChilds.find((pair) => pair.child.getAttribute('id') === draggableItem.getAttribute('id')).parent
     console.log(draggableItemParent);
 }
 
@@ -281,10 +364,11 @@ function onDrop(event) {
         
             console.log(dropzone);
             dropzone.appendChild(draggableElement);
-            draggableItem =  null;
+            // draggableItem =  null;
+            // draggableItemParent = null;
             // console.log(dropzone);
             dropzone.style.transform = 'scale(1)';
-            event.target.style.border = '1px dashed #80c627'
+            event.target.style.border = '2px dashed #80c627'
             event.target.style.borderRadius = '5px'
             draggableItemParent.style.border = '1px solid #80c627'
             draggableItemParent.style.borderRadius = '5px'
@@ -299,9 +383,10 @@ function onDrop(event) {
         if (!child) {
             console.log(child);
             dropzone.appendChild(draggableElement);
-            draggableItem =  null;
+            // draggableItem =  null;
+            // draggableItemParent = null;
             dropzone.style.transform = 'scale(1)';
-            event.target.style.border = '1px solid #80c627'
+            event.target.style.border = '2px solid #80c627'
             event.target.style.borderRadius = '5px'
             if (dropzone.nodeName === 'LI') {
                 dropzone.style.border = 'none'
@@ -333,6 +418,9 @@ function onDrop(event) {
         // console.log(draggableItemParent);
         // draggableItemParent.style.border = ''
         draggableItemParent.appendChild(draggableItem);
+        draggableItemParent.style.border = ''
+        // draggableItem = null;
+        // draggableItemParent = null
         element.style.transform = 'scale(1)';
         element.style.border = '2px dashed #80c627';
         
