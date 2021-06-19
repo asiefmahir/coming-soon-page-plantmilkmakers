@@ -499,6 +499,8 @@
 	}
 }
 
+
+
 @media (max-width: 768px) {
 	.footer__elements {
 		flex-direction: column;
@@ -516,6 +518,29 @@
 
 	.footer__social-links {
 		width: 100%;
+	}
+
+	.secondary-footer {
+		margin-top: 5rem !important;
+		padding: 1rem;
+		position: relative;
+	}
+
+	.secondary-footer__copy-right-text {
+		margin-top: 2rem;
+	}
+
+	.secondary-footer__moto {
+		margin-top: 6.5rem;
+	}
+
+
+}
+
+@media (max-width: 613px){
+	.secondary-footer__copy-right-text {
+		float: left;
+		margin-top: 2rem;
 	}
 }
 
@@ -538,6 +563,13 @@
 	.footer__social-link-item:nth-child(1) img{
 		width:1rem;
 	}
+
+	.secondary-footer__copy-right-text {
+		float: left;
+		margin-top: 2rem;
+	}
+
+	
 	
 }
 
